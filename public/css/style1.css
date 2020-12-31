@@ -1,0 +1,208 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	text-decoration: none;
+	width: 80%;
+	height: 100%;
+	background: #808080 50% 0 no-repeat;
+}
+
+.t-wrapp li{
+display: inline;
+margin-left: 25px;
+}
+
+
+
+.headbar{
+    position: relative;
+    list-style: none;
+    background: #202020;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    height: 40px;
+}
+
+.headbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.headbar .b-icon{
+background-position: 0 -134px;
+    height: 8px;
+    margin: 0 10px;
+    width: 6px;
+}
+
+
+
+
+
+
+.mainheader{
+	width: 100%;
+	height: 167px;
+	opacity: 0.5;
+}
+
+.b-wrapper{
+font: 400 13px Arial,Helvetica,Tahoma,sans-serif;
+-webkit-font-smoothing: antialiased;
+color: #3f3f3f;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+text-align: left;
+width: 960px;
+overflow-x: hidden;
+padding: 0;
+position: relative;
+min-height: 100%;
+z-index: 1;
+margin: 0 auto!important;
+background: #fff!important;
+margin-top: 160px!important;
+padding: 20px;
+}
+#wrapper h1{
+	color:#222;
+}
+
+
+#slider{
+	    background: #222;
+    color: #999;
+    height: 370px;
+    margin: 15px 0;
+    overflow: hidden;
+    padding-right: 300px;
+    border-top: 2px;
+}
+
+
+.first_episode #yohoho{
+float: left;
+    height: 370px;
+    position: relative;
+    width: 100%; 
+    padding-right: 300px;
+}
+
+
+
+.slides{
+	position: relative;
+	left: 720px;
+	bottom: 600px;
+	float: right;
+    height: 370px;
+    margin-right: -280px;
+    width: 280px;
+}
+
+#slider.slides-wrapper{
+	padding: 20px 20px 0;
+}
+
+#slider.slides-inner{
+border-top: 1px solid #444;
+    overflow: hidden;
+}
+
+
+
+#slider.slides-content{
+	height: 306px;
+    overflow: hidden;
+    width: 300px;
+
+}
+
+#slider .slides-content li {
+    float: left;
+    width: 240px;
+}
+
+#slider .slides-content .item {
+    border-bottom: 1px solid #444;
+    height: 81px;
+    overflow: hidden;
+    padding: 10px 0 10px 67px;
+}
+
+#slider .slides-content .cover  {
+    float: left;
+    height: 80px;
+    margin-left: -67px;
+    width: 57px;
+}
+
+#slider .slides-content .title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    }
+
+#slider .slides-content .descr {
+    font-size: 11px;
+    height: 33px;
+    line-height: 11px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    padding-top: 3px;
+    }
+
+
+
+
+.b-index-descr {
+    overflow: hidden;
+}
+
+
+.b-index-descr-text {
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.b-index-desc-text h2{
+	    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.b-index-desc-text .inner{
+	padding-top: 10px;
+}
+
+
+.b-index-desc-text .img.right{
+	float: right;
+    margin-right: 0!important;
+    height: auto;
+    
+}
+
+.news-cont p{
+	margin: 4px 0 16px 0;
+	font-size: 16px;
+    line-height: 24px;
+}
+
+.news-cont h2{
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+
+/*2 season start*/
+

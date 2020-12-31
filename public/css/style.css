@@ -1,0 +1,153 @@
+
+
+
+.container {
+    position: absolute;
+    width: 11.94vw;
+    height: 28.7vh;
+    text-align: center;
+    /* top: 4vw; */
+    left: 0vh;
+    z-index: 9999;
+}
+
+.circle {
+  stroke: #fff;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.playBut svg{
+  position: absolute;
+  top: 25%;
+  left: 18.5%;
+  width: 14vh;
+  height: 14vh;
+}
+
+.playBut {
+    width: 11.94vw;
+    height: 27.8vh;
+    top: 0;
+    position: relative;
+    box-shadow: 8px 8px 5px -1px rgba(0,0,0, .5);
+    display: inline-block;
+    -webkit-transition: all .5s ease;
+}
+.playBut .triangle {
+  -webkit-transition: all 0.7s ease-in-out;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: #000;
+  transform: translateY(0);
+}
+.playBut:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: #fff;
+  animation: nudge 0.7s ease-in-out;
+}
+@keyframes nudge {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.playBut:hover .circle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+
+
+
+
+
+@media (orientation: portrait)  {
+
+
+
+.container {
+  position: absolute;
+    width: 300px;
+  height: 26vh;
+  text-align: center;
+  left: 2vh;
+  z-index: 9999;
+}
+
+.playBut {
+    width: 224px!important;
+    height: 38.2vh!important;
+    display: inline-block;
+    right: 1.5vw;
+    top: 26px;
+    -webkit-transition: all .5s ease;
+}
+
+
+.playBut svg{
+    position: absolute;
+    top: 36%!important;
+    left: 30.5%!important;
+    width: 14vh!important;
+    height: 14vh!important;
+}
+
+}
+
+@media (orientation: landscape) and (max-width: 1000px){
+
+.playBut svg{
+    position: absolute;
+    top: 34%;
+    left: 35.5%;
+    width: 14vh;
+    height: 14vh;
+    }
+
+    .playBut {
+    width: 22.94vw;
+    height: 57.8vh;
+    position: relative;
+    top: 18.4px;
+    left: 50px;
+    display: inline-block;
+    -webkit-transition: all .5s ease;
+}
+
+.star-rating__avg {
+    font-size: 5.2vh!important;
+}
+
+.star-rating__item {
+    padding-top: 15px;
+    width: 26px;
+    height: 26px;
+    flex: 0 0 26px;
+}
+
+  }
+
+
+  @media (orientation: portrait) and (max-height: 570px) {
+
+.playBut{
+      right: 2.6vw;
+}
+
+
+  }

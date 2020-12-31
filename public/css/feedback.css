@@ -1,0 +1,115 @@
+.alert{
+    color: red;
+    display: block!important;
+}
+
+/*Feedback all*/
+/*Main background gradient*/
+.feedback-bg-linear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg, #20262E 0%, #7677d2 50%, #262626 50%, #607d8b 100%);
+}
+
+.feedback-bg-linear textarea {
+    width: 575px;
+    height: 200px;
+    max-width: 600px;
+    max-height: 270px;
+}
+
+.feedback-bg-linear .card-header {
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 10px 15px;
+    text-align: center;
+}
+/*Label style*/
+.feedback-bg-linear label {
+    width: 95%;
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #b5b5b5;
+}
+
+
+/*Margin for img form*/
+.img-add__form {
+    width: 76%!important;
+    height: 250px!important;
+    margin-top: 60px;
+}
+
+.img-add__form img {
+    max-width: 200px;
+    display: flex;
+    max-height: 150px;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.img-add__form input{
+
+    margin-top: 20px;
+}
+
+.btn-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+/*Form background*/
+.feedback-bg-linear .card {
+    background: rgba(0,0,0, .85);
+    padding: 25px;
+}
+/*Button submit*/
+.feedback-bg-linear button {
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: #4F2EDC;
+    padding: 18px 30px 18px 30px;
+    margin: 20px;
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0 100%);
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+.form-group {
+    width: 78%!important;
+    height: 250px!important;
+    margin-top: 60px;
+}
+
+@media (orientation: portrait)  {
+    .position-feedback__form{
+        width: 98vw;
+    }
+    .feedback-bg-linear textarea{
+        width: 70vw;
+        max-width: 70vw;
+    }
+    .img-add__form input{
+        font-size: 16px!important;
+    }
+    .img-add__form{
+        height: 400px!important;
+    }
+    .form-group{
+        margin: 0!important;
+    }
+    .img-add__form{
+        margin: 0!important;
+    }
+}
+
+
+/*END Feedback all*/
+button[disabled] {
+    cursor: not-allowed;
+}

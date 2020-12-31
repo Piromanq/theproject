@@ -1,0 +1,113 @@
+.overlay_yjasi_top10{
+        width: 100%!important;
+    height: 60px!important;
+    position: absolute;
+    top: 65vh;
+    margin: 0 auto;
+    background: linear-gradient(transparent, #191a1d);
+}
+
+
+@media (orientation: portrait){
+
+
+	.search-wrap {
+    overflow: hidden!important;
+    z-index: 9999!important;
+    position: absolute!important;
+    height: 20.3vh!important;
+    width: 43vw!important;
+    left: 7vw!important;
+    top: 14%!important;
+}
+
+.search-box input {
+    background: #333333!important;
+    border: 1px #666 solid!important;
+    border-radius: 7px!important;
+    box-sizing: border-box!important;
+     width: 160px!important; 
+     height: 36px!important;
+}
+
+.search-box button {
+    position: absolute!important;
+    right: 6px!important;
+    top: 10px!important;
+    border: 0!important;
+    padding: 0!important;
+    text-align: center!important;
+    width: 1px!important;
+    float: right!important;
+    height: 1px!important;
+    line-height: 40px!important;
+    color: #fff!important;
+    background-color: transparent!important;
+    font-size: 16px!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    cursor: pointer!important;
+}
+
+.search-box .fa-search {
+    padding-bottom: 2px!important;
+    border: 0!important;
+    padding: 0!important;
+    text-align: center!important;
+    /* width: 8vw; */
+    position: relative!important;
+    bottom: 8px!important;
+    left: -6px!important;
+    /* height: 4vh; */
+    color: #fff!important;
+    background-color: transparent!important;
+    font-size: 3.2vh!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    cursor: pointer!important;
+    z-index: 1!important;
+}
+
+.overlay_yjasi {
+    -webkit-font-smoothing: antialiased!important;
+    width: 100%!important;
+    min-width: 100%!important;
+    height: 60px!important;
+    position: absolute!important;
+    top: 461px!important;
+    margin: 0 auto!important;
+    background: linear-gradient(transparent, #191a1d)!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.b_wrappertop_fantastika{
+width: 98vw;
+position: relative;
+bottom: 20vh;
+}
+
+.b_wrappertop_fantastika .topgallary ul {
+        position: relative;
+    width: 100vw;
+    right: 40px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.topgallary{
+     width: 86.2vw!important;
+    margin-top: 0!important;
+    right: 22px!important;
+}
+
+.a_fantastika_in_fantastika {
+    left:89px!important;
+}
+
+.topgallary ul li a img {
+     width: 60vw!important;
+    right: 36px;
+}
+
+}

@@ -1,0 +1,1457 @@
+li{
+    list-style: none;
+}
+
+.t-wrapp li{
+display: inline;
+margin-left: 25px;
+}
+
+.labs-lovers{
+    position: relative;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+.labs-lovers li h4{
+    padding-right: 20px;
+font-size: 0px;
+}
+
+.labs-lovers li h1{
+    color: #fff;
+    padding-left: 2.2vh;
+    padding-bottom: 2.1vh;
+    font-size: 25px;
+    text-shadow: .6vh .4vh 1.1vh  black;
+}
+
+.labs-lovers li{
+    display: inline;
+}
+
+.color_new{
+    color: #ff7373;
+}
+.color_996AD6{
+  color: #996AD6;
+}
+
+#recomend{
+   position: relative;
+}
+
+
+.headbar{
+    position: relative;
+    list-style: none;
+    background: #202020;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    height: 40px;
+}
+
+.headbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.headbar .b-icon{
+background-position: 0 -134px;
+    height: 8px;
+    margin: 0 10px;
+    width: 6px;
+}
+
+
+
+
+
+
+.mainheader{
+	width: 100%;
+	height: 167px;
+	opacity: 0.5;
+}
+
+#wrapper h1{
+	;
+}
+
+
+#slider{
+    width: 55vw;
+    height: 53vh;
+    right: 18vw;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.first_episode #yohoho{
+    float: left;
+    height: 58vh!important;
+    width: 88%!important;
+}
+
+       iframe{
+    width: 55vw!important;
+    height: 53vh!important;
+    border: 0!important;
+    }
+
+.wrapper-between{
+    width: 90%;
+    height: auto;
+
+}
+
+.main-description {
+    width: 30vw;
+    height: 48vh;
+    float: right;
+    color: #fff;
+
+}
+
+.description-text span{
+    color: #fff;
+    line-height: 26px;
+
+}
+.grid-group{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: 236px auto;
+    grid-template-columns: 130px auto;
+    margin-top: 10px;
+    grid-gap: 8px;
+}
+
+.col__data-description{
+   color: #565c67;
+    margin: 0;
+}
+
+.description-rating{
+    display: flex;
+    align-items: center;
+    height: 39px;
+    margin-bottom: 24px;
+}
+
+.rating-flex img{
+    height: 22px;
+}
+
+.kinopoisk_ratingImg{
+    width: 29px;
+    height: 29px!important;
+}
+
+.rating-container{
+  margin-right: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.original-title{
+    display: flex;
+}
+.location-title{
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 24px;
+    color: #fff;
+    margin-left: 30px;
+    font-family: proximaNovaRegular,sans-serif;
+}
+.original-title_image{
+    height: 40px;
+    margin-left: 0;
+    bottom: 10px;
+    position: relative;
+    margin-right: 10px;
+    width: 80px;
+}
+
+.original-title_image img{
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.name{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    width: 99%;
+    align-items: center;
+}
+/*Play butt svg*/
+.title-watch{
+    width: 49%;
+    margin-left: 0;
+}
+.exactly-title{
+margin-left: 0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.play-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playBut__In {
+    width: 40px;
+    height: 40px;
+}
+
+.play-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.playBut__In .triangle {
+    -webkit-transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: #fff;
+    transform: translateY(0);
+}
+
+.play-button-title{
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 2px;
+    color: #565c67;
+}
+
+.play-button-twice{
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 0;
+    color: #565c67;
+}
+
+.label-play{
+    display: flex;
+    align-items: center;
+}
+
+.elem-text__title{
+    width: calc(50% - 180px);
+    opacity: .4;
+    margin-right: 0;
+}
+
+.elem-text__title h1{
+    font-size: 28px!important;
+    line-height: 28px;
+    color: #565c67!important;
+}
+
+.element__description-year{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: proximaNovaSemibold,sans-serif;
+    margin-right: 16px;
+    color: #565c67;
+}
+
+.description-year{
+   display: flex;
+    align-items: center;
+}
+
+.rating-flex{
+    font-size: 18px;
+    line-height: 22px;
+    color: #565c67;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-left: 0;
+}
+
+.rating-flex span{
+ padding-left: 10px;
+}
+
+
+.description-Director{
+  margin-left: 10px;
+}
+
+
+.slides{
+	position: relative;
+	left: 720px;
+	bottom: 600px;
+	float: right;
+    height: 370px;
+    margin-right: -280px;
+    width: 280px;
+}
+
+#slider.slides-wrapper{
+	padding: 20px 20px 0;
+}
+
+#slider.slides-inner{
+border-top: 1px solid #444;
+    overflow: hidden;
+}
+
+
+
+#slider.slides-content{
+	height: 306px;
+    overflow: hidden;
+    width: 300px;
+
+}
+
+#slider .slides-content li {
+    float: left;
+    width: 240px;
+}
+
+#slider .slides-content .item {
+    border-bottom: 1px solid #444;
+    height: 81px;
+    overflow: hidden;
+    padding: 10px 0 10px 67px;
+}
+
+#slider .slides-content .cover  {
+    float: left;
+    height: 80px;
+    margin-left: -67px;
+    width: 57px;
+}
+
+#slider .slides-content .title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    }
+
+#slider .slides-content .descr {
+    font-size: 11px;
+    height: 33px;
+    line-height: 11px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    padding-top: 3px;
+    }
+
+
+
+
+.b-index-descr {
+    overflow: hidden;
+}
+
+
+.b-index-descr-text {
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.b-index-desc-text h2{
+color: #fff;
+    font-size: 1.7vw;
+    font-weight: 700;
+    padding-top: 1.3vh;
+}
+
+.b-index-desc-text .inner{
+	padding-top: 10px;
+}
+
+
+.b-index-desc-text .img.right{
+	float: right;
+}
+
+h4{
+color: #ff4673;
+}
+.news-cont p{
+    color: #D3D3D3;
+	margin: .4vh 0 1.6vh 0;
+	font-size: 1.1vw;
+    line-height: 1.7vw;
+    width: 94%;
+}
+
+.news-cont h2{
+color: #fff;
+}
+
+.b-index-desc-text span{
+    color: #ff7373;
+    font-size: ;
+font-size: 0;
+}
+
+.info-maniac{
+    font-size: 0vh;
+    color: #A9A9A9;
+    padding-bottom: 2.2vh;
+   padding: 1.1vh 0 1.1vh 0;
+    border-width: .15vh;
+}
+
+
+
+h3{
+    padding:15px 0 0px 0;
+    color: #fff;
+
+}
+
+.seoopisanie{
+    margin-bottom: 30px;
+    width: 50%;
+    height: 30vh;
+    background: #2a2d34;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 5px rgba(0,0,0, .6);
+}
+
+.seoopisanie li{
+list-style: none;
+display: block;
+padding-right: 100px;
+}
+
+.seoopisanie h3{
+position: relative;
+    left: 3%;
+    top: 2%;
+    width: 100%;
+    font-size: 19px;
+}
+.pi{
+    margin-top: 10px;
+    right: 3.2vh;
+    padding-left: .5vh;
+    width: 6vh;
+    height: 2.5vh;
+    box-shadow: 0 5px 15px 3px black;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.9vh;
+    position: relative;
+    background: #d12c52;
+    border-radius: 6px;
+    padding: 4px 8px 4px 13px;
+    top: 2px;
+    margin-left: 40px;
+    color: #D3D3D3;
+    font-weight: 700;
+
+}
+.Kinopoisk_logo {
+width: 8.3vh;
+    border-radius: 10px 10px 10px 10px;
+    top: 26px;
+    position: relative;
+    left: 10px;
+    float: left;
+}
+
+.originalname{
+color: #878787;
+position: relative;
+top: 5%;
+left: 2.9%;
+
+}
+.seoopisanie li h2{
+    position: relative;
+    color: #f19220;
+    float: left;
+    font-size: 40px;
+    padding-top: 51px;
+    padding-left: 16px;
+}
+.marginpar{
+opacity: 0;
+}
+.inner-clearfix{
+    background: #2a2d34;
+    padding: 17px;
+    width: 70%;
+    min-height: 250px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 10px 30px 5px rgba(0,0,0, .6);
+}
+.img.right{
+    width: 240px;
+    height: 290px;
+}
+
+.img.right img{
+    width: 200px;
+    height: 240px;
+}
+
+
+.adaptivnoctb{
+    width: 15vh;
+    height: 15vh;
+    float: left;
+}
+
+@media only screen and (max-width: 320px) {
+        #yohoho{
+    width: 320px!important;
+    height: 42vh!important;
+    }
+
+    #yohoho-iframe{
+    width: 320px!important;
+    height: 42vh!important;
+}
+
+#slider {
+    color: #999;
+    width: 53%;
+    height: 42vh;
+    overflow: hidden;
+    padding-right: 300px;
+    border-top: 2px;
+}
+
+.Kinopoisk_logo {
+    width: 9.3vh;
+    top: 6px;
+    left: 22px;
+}
+
+.seoopisanie li h2 {
+    padding-left: 25vw;
+    top: -9.7vh;
+    padding-top: 24px;
+}
+
+.seoopisanie {
+    height: 32vh;
+}
+
+}
+
+@media (orientation: portrait) {
+    #yohoho{
+    width: 99vw!important;
+    height: 42vh!important;
+    }
+
+        iframe{
+    width: 99vw!important;
+    height: 42vh!important;
+    }
+
+    #yohoho-iframe{
+    width: 99vw!important;
+    height: 42vh!important;
+}
+
+    .labs-lovers {
+margin-left: 0;
+margin-bottom: 32px;
+}
+
+.labs-lovers {
+padding: 0!important;
+}
+
+    .labs-lovers li h1{
+    font-size: 21px;
+
+}
+
+.seoopisanie {
+    width: 100%;
+    min-height: 36vh;
+}
+
+#slider {
+    color: #999;
+    width: 115%;
+    left: 0;
+    height: 42vh;
+    overflow: hidden;
+    padding-right: 300px;
+    border-top: 2px;
+}
+
+
+.seoopisanie h3 {
+    position: relative;
+    left: 3%;
+    top: 2%;
+    width: 100%;
+    font-size: 16px;
+}
+
+.seoopisanie li {
+    padding-right: 30px;
+}
+
+.originalname {
+    color: #878787;
+    position: relative;
+    top: 5%;
+    left: 2.9%;
+    font-size: 15px;
+}
+
+.marginpar {
+    color: #D3D3D3;
+    background-color: #2a2d34;
+}
+
+.b-index-desc-text h2 {
+    color: #fff;
+    width: 90%;
+    padding: 15px;
+    font-size: 20px;
+    margin: 0!important;
+}
+
+.news-cont p {
+    color: #D3D3D3;
+    font-size: 16px;
+    line-height: 6.7vw;
+    width: 93%;
+    padding: 10px;
+}
+
+
+.img.right{
+    width: 100%;
+    right: 22%;
+    position: relative;
+    height: 40%;
+}
+
+.img.right img {
+    width: 200px!important;
+    height: 250px;
+    float: right;
+}
+
+.seoopisanie li h2 {
+    color: #f19220;
+    padding-left: 24vw;
+    top: -9.7vh;
+}
+
+.adaptivnoctb {
+    width: 0vh;
+    height: 0vh;
+    float: left;
+    opacity: 0;
+}
+
+.Kinopoisk_logo {
+left: 20px;
+}
+
+    .inner-clearfix {
+    width: 100%;
+    padding: 0!important;
+}
+
+
+}
+
+@media (orientation: portrait) and (max-height: 570px){
+
+  .pi {
+    margin-left: 37px!important;
+
+    }
+
+}
+
+
+@media (orientation: landscape) and (max-width: 1000px){
+
+    iframe {
+    width: 91vw!important;
+    height: 85vh!important;
+    border: 0!important;
+}
+
+
+.overlay_yjasi {
+    top: 41.1vh!important;
+}
+
+.labs-lovers li h1 {
+    font-size: 23px;
+    position: relative;
+}
+
+.labs-lovers {
+    padding-bottom: 20px;
+    width: 82%;
+    margin-left: 12%;
+}
+
+    .pi {
+    font-size: 4.9vh!important;
+    width: 14vh!important;
+    padding-left: 3.5vh!important;
+    padding-bottom: 10px;
+    height: 4.5vh!important;
+}
+
+.seoopisanie {
+     min-height: 72vh!important;
+    width: 95%;
+}
+
+    .news-cont p{
+    font-size: 2.9vw;
+    line-height: 3.9vw;
+    }
+
+    .b-index-desc-text h2{
+    font-size: 3.7vw;
+    bottom: 38px;
+    }
+
+    .marginpar{
+    position: absolute;
+    font-size: 2.9vw;
+    line-height: 3.9vw;
+    width: 50vw;
+    right: 40vw;
+    padding-top: 34px;
+    }
+
+    .news-cont h2 {
+    margin-top: 140px!important;
+}
+
+    .inner-clearfix {
+    width: 95%!important;
+}
+
+    .adaptivnoctb {
+    width: 36vh;
+    height: 35vh;
+    bottom: 100px;
+    position: relative;
+    left: 90px;
+    float: right;
+    opacity: 0;
+    }
+
+    .Kinopoisk_logo{
+position: relative;
+    top: 12px;
+    left: 27px;
+    width: 20vh;
+    }
+
+    .seoopisanie li h2 {
+    position: relative;
+    top: 1.7vw;
+    color: #f19220;
+    float: left;
+    font-size: 40px;
+    padding-top: 14px;
+    padding-left: 30px;
+}
+
+/*YOHOHO фреймы овтечающие за гирину*/
+#slider {
+    height: 85vh!important;
+    width: 95%;
+    left: 0;
+    padding-right: 0px;
+}
+
+.first_episode #yohoho {
+    float: left;
+    height: 85vh!important;
+    width: 100%!important;
+}
+
+#yohoho-iframe{
+        width: 90vw!important;
+    height: 85vh!important;
+}
+
+/* КОНЕЦ YOHOHO фреймы овтечающие за гирину*/
+
+    .menu_yjasi a{
+  font-size: 2.3vw;
+    }
+
+    .menu_yjasi{
+     padding-left: 13%;
+    }
+
+    .search-wrap{
+        top: 117px;
+    }
+
+        .img.right img {
+    width: 126px!important;
+    height: 150px;
+    float: right;
+    margin-top: 0;
+}
+}
+
+
+
+@media (orientation: portrait){
+
+
+    .overlay_yjasi {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    min-width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 168px;
+    margin: 0 auto;
+    background: linear-gradient(transparent, #191a1d);
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.nova {
+    height: 227px;
+    width: 100%;
+}
+
+    .search-wrap {
+    overflow: hidden;
+    z-index: 9999;
+    position: absolute;
+    height: 5.3vh;
+    width: 80vw!important;
+    left: 2vw!important;
+    top: 23%!important;
+}
+
+.search-box input{
+background: #333333;
+    border: 1px #666 solid;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: rgba(255,255,255,.5);
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 34px;
+    padding: 0 0 0 13px;
+    width: 280!important;
+}
+
+.search-box button {
+position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.search-box .fa-search {
+    padding-bottom: 2px;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    width: 8vw;
+    height: 4vh;
+    color: #fff;
+    background-color: transparent;
+    font-size: 3.2vh;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 1;
+    }
+}
+
+
+.b-index-desc-text .img.right {
+    float: right;
+}
+
+@media only screen and (max-width: 600px) and (min-height: 1024px) and (max-height: 1044px){
+
+
+    .Kinopoisk_logo {
+top: -10px;
+    border-radius: 10px;
+    left: 4.2vh;
+    width: 6vh;
+    height: 6vh;
+    position: relative;
+    float: right;
+}
+
+
+.labs-lovers li h1 {
+    color: #fff;
+    padding-left: 2.2vh;
+    padding-bottom: 2.1vh;
+    font-size: 3vw;
+    text-shadow: 0.6vh 0.4vh 1.1vh black;
+}
+
+.pi{
+    box-shadow: 0 5px 15px 3px black;
+    font-size: 1.9vh;
+    position: relative;
+ top: 1vh;
+    right: 157px;
+background: #d12c52;
+width: 6vh;
+padding-left: .5vh;
+height: 2.5vh;
+border-radius: 6px;
+float: right;
+color: #D3D3D3;
+font-weight: 700;
+text-shadow: 2px 2px 2px black;
+}
+
+.seoopisanie li h2 {
+float: right;
+    position: absolute;
+    color: #f19220;
+ left: 72%;
+    top: 552px;
+    font-size: 2.4vh;
+}
+
+
+.marginpar{
+position: absolute;
+    bottom: 91vh;
+    width: 47vh;
+    right: 9vw;
+}
+
+.adaptivnoctb{
+margin-left: 20px;
+margin-top: 0;
+}
+
+.inner-clearfix h2{
+ padding-top: 321px;
+margin: 0;
+color: #fff;
+font-size: 31px;
+}
+
+.inner-clearfix img{
+    height: 220px;
+}
+
+.b-index-desc-text .img.right {
+    float: right;
+    height: 15vh;
+    margin-top: 79px;
+}
+
+.news-cont p {
+    color: #D3D3D3;
+    margin: .4vh 0 1.6vh 0;
+    font-size: 3.1vw;
+    line-height: 4.7vw;
+}
+
+}
+/*partriet*/
+@media only screen and (max-height: 1366px) and (max-width: 1024px) and (min-height: 1290px) and (min-width: 1000px){
+.pi{
+ right: 1.2vh;
+}
+.seoopisanie li h2{
+        padding-left: 15%;
+    bottom: 100px;
+}
+
+.inner-clearfix {
+    min-height: 200px;
+}
+
+.img.right {
+    right: 2%;
+    position: relative;
+    width: 200px;
+}
+
+.news-cont p {
+    font-size: 16px;
+    line-height: 2.7vw;
+}
+
+.b-index-desc-text h2 {
+    font-size: 24px;
+}
+
+.b-wrapper{
+bottom: 41vh!important;
+}
+
+}
+
+/*landscape*/
+@media only screen and (max-width: 1366px) and (max-height: 1024px) and (min-width: 1290px) and (min-height: 1000px){
+   /*block after player*/
+.pohojie_seriali{
+width: 94vw;
+height: 45vh;
+margin-bottom: 20px;
+}
+.pohojie_seriali a{
+    width: 20vw;
+    height: 30vh;
+    left: 2%;
+    margin-left: 15px;
+    margin-right: 12px;
+}
+
+
+.pohojie_seriali a span{
+  color: #fff;
+  font-weight: 700;
+font-size: 14px;
+}
+
+.pohojie_seriali h3{
+margin-bottom: 10px;
+}
+
+.pohojie_seriali img{
+    width: 20vw;
+    height: 28vh;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.pohojie_seriali img:hover{
+  transform: scale(1.08);
+}
+/* End block after player*/
+
+.news-cont p{
+    color: #D3D3D3;
+    margin: .4vh 0 1.6vh 0;
+    font-size: 22px;
+    line-height: 2.6vw;
+}
+
+.news-cont h2 {
+    color: #fff;
+}
+
+.b-index-desc-text h2 {
+    padding-top: 8px!important;
+    color: #fff;
+    font-size: 39px;
+    font-weight: 700;
+    padding-top: 1.3vh;
+}
+
+.img.right {
+    float: right;
+    margin-right: 0!important;
+}
+
+.inner-clearfix {
+    width: 91%;
+}
+
+.seoopisanie {
+    width: 94%;
+}
+
+#yohoho{
+    width: 1000px!important;
+}
+
+#slider{
+width: 107%;
+}
+
+.labs-lovers li h1 {
+    font-size: 25px;
+}
+
+.marginpar{
+    padding-right: 13%;
+    position: absolute;
+    bottom: 636px;
+    left: 59px;
+    font-size: 24px;
+    width: 70vh;
+}
+
+.b-wrapper{
+    width: 100vw!important;
+}
+
+.originalname{
+    font-size: 22px;
+}
+
+.pi {
+    /* box-shadow: 0 5px 15px 3px black; */
+    font-size: 2.1vh;
+    top: 4vh;
+    right: -41px;
+    background: #d12c52;
+    width: 6vh;
+    padding-left: .5vh;
+    height: 3.1vh;
+    padding-top: 10px;
+    padding-right: 6px;
+    border-radius: 6px;
+    float: right;
+    color: #D3D3D3;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+}
+
+.Kinopoisk_logo {
+    border-radius: 10px;
+    left: 15.2vh;
+    width: 8vh;
+    height: 8vh;
+    top: -54px;
+    position: relative;
+    float: right;
+}
+
+.seoopisanie li h2 {
+    float: right;
+    position: relative;
+    top: -3.5vh;
+    color: #f19220;
+    left: 14vh;
+}
+
+.seoopisanie h3 {
+position: relative;
+    left: -11%;
+    top: 2%;
+    width: 72%;
+    font-size: 24px;
+
+}
+
+}
+/*partriet*/
+@media only screen and (max-height: 1024px) and (max-width: 768px) and (min-height: 900px) and (min-width: 650px){
+.pi{
+ right: 1.2vh;
+}
+.seoopisanie li h2{
+        padding-left: 17%;
+    bottom: 100px;
+}
+
+.inner-clearfix {
+    min-height: 200px;
+}
+
+.img.right {
+    right: 2%;
+    position: relative;
+    width: 200px;
+}
+
+.news-cont p {
+    font-size: 16px;
+    line-height: 2.7vw;
+}
+
+.b-index-desc-text h2 {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.b-wrapper{
+bottom: 41vh!important;
+}
+
+.Kinopoisk_logo{
+    width: 8.3vh;
+    border-radius: 10px 10px 10px 10px;
+    top: 26px;
+    position: relative;
+    left: 26px!important;
+    float: left;
+}
+
+}
+
+/* landscape*/
+@media only screen and (max-width: 1024px) and (max-height: 768px) and (min-width: 900px) and (min-height: 650px){
+
+   /*block after player*/
+.pohojie_seriali{
+width: 94vw;
+height: 45vh;
+margin-bottom: 20px;
+}
+.pohojie_seriali a{
+    width: 20vw;
+    height: 30vh;
+    left: 2%;
+    margin-left: 15px;
+    margin-right: 12px;
+}
+
+
+.pohojie_seriali a span{
+  color: #fff;
+  font-weight: 700;
+font-size: 14px;
+}
+
+.pohojie_seriali h3{
+margin-bottom: 10px;
+}
+
+.pohojie_seriali img{
+    width: 20vw;
+    height: 28vh;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.pohojie_seriali img:hover{
+  transform: scale(1.08);
+}
+/* End block after player*/
+
+
+.news-cont p{
+color: #D3D3D3;
+    margin: .4vh 0 1.6vh 0;
+    font-size: 1.8vw;
+    line-height: 2.6vw;
+}
+
+.news-cont h2 {
+    color: #fff;
+}
+
+/*НАЗВАНИЕ ОТСТУП*/
+.labs-lovers{
+    margin-left: 60px!important;
+}
+
+
+
+.b-index-desc-text h2 {
+    padding-top: 8px!important;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 1.3vh;
+}
+
+.img.right {
+    float: right;
+    margin-right: 0!important;
+}
+
+.inner-clearfix {
+    width: 91%;
+}
+
+.seoopisanie {
+    width: 94%;
+}
+
+#yohoho{
+    width: 1000px!important;
+}
+
+#slider{
+width: 107%;
+}
+
+
+/*YOHOHO BLOCK*/
+#yohoho-iframe{
+        width: 87vw!important;
+    height: 58vh!important;
+}
+
+#yohoho-loading{
+    width: 93%!important;
+}
+
+.labs-lovers li h1 {
+    font-size: 25px;
+}
+
+.marginpar{
+    padding-right: 13%;
+    position: absolute;
+    bottom: 636px;
+    left: 59px;
+    font-size: 24px;
+    width: 70vh;
+}
+
+.b-wrapper{
+    width: 100vw!important;
+}
+
+.originalname{
+    font-size: 22px;
+}
+
+.pi {
+    float: left;
+    right: 23px;
+    box-shadow: 0 5px 8px -2px black!important;
+}
+
+.Kinopoisk_logo {
+    border-radius: 10px;
+    left: -11.8vh;
+    width: 9vh;
+    height: 9vh;
+    top: 52px;
+    position: relative;
+    float: left;
+}
+
+.seoopisanie li h2 {
+    float: left;
+    position: relative;
+    top: 7.5vh;
+    color: #f19220;
+    left: -12vh;
+}
+
+.seoopisanie h3 {
+position: relative;
+    left: -11%;
+    top: 2%;
+    width: 72%;
+    font-size: 24px;
+
+}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-height: 1326px) and (max-height: 1366px){
+
+
+    .Kinopoisk_logo {
+    top: 10%;
+    border-radius: 10px;
+    width: 6vh;
+    height: 6vh;
+    position: relative;
+    float: left;
+}
+
+
+.labs-lovers li h1 {
+    color: #fff;
+    padding-left: 2.2vh;
+    padding-bottom: 2.1vh;
+    font-size: 3vw;
+    text-shadow: 0.6vh 0.4vh 1.1vh black;
+}
+
+.pi{
+font-size: 1.9vh;
+    top: 0;
+    height: 2.5vh;
+    border-radius: 6px;
+    float: left;
+}
+
+.originalname {
+    font-size: 3vw;
+}
+
+.seoopisanie li h2 {
+    padding-left: 27%;
+    bottom: 80px;
+    float: left;
+}
+
+.seoopisanie h3 {
+position: relative;
+    left: -13%;
+    top: 2%;
+    width: 68%;
+    font-size: 30px;
+}
+
+
+.marginpar{
+    position: absolute;
+    bottom: 104vh;
+    width: 45vh;
+    right: 30vw;
+}
+
+.adaptivnoctb{
+margin-left: 20px;
+margin-top: 0;
+}
+
+.inner-clearfix h2{
+    color: #fff;
+    padding: 12px;
+    font-size: 31px;
+}
+
+.news-cont p {
+    color: #D3D3D3;
+    margin: .4vh 0 1.6vh 0;
+    font-size: 2.1vw;
+    line-height: 3.7vw;
+}
+
+}
+
+

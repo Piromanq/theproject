@@ -1,0 +1,63 @@
+
+@media (orientation: portrait)  {
+.autoplay .slick-next {
+        border-top: 1.4vmin solid white!important;
+    border-right: 1.4vmin solid white!important;
+    margin-right: 36vw!important;
+}
+
+.autoplay .slick-prev {
+        border-top: 1.4vmin solid white!important;
+    border-right: 1.4vmin solid white!important;
+    width: 7vmin!important;
+    height: 7vmin!important;
+    margin-left: 39vw!important;
+}
+.k_name{
+left: 2%!important;
+}
+
+.autoplay .slick-prev{
+    top: 49%!important;
+}
+
+.autoplay .slick-next{
+    top: 49%!important;
+}
+
+
+.autoplay:before{
+    background-color: rgba(0,0,0, 0.7);
+    content: '';
+    position: absolute;
+    top: 51%;
+    z-index: 10;
+    left: 41%;
+    transform: translate(-40%, -60%) rotate(90deg);
+    width: 8vh;
+    height: 8vh;
+}
+
+.autoplay:after{
+    background-color: rgba(0,0,0, 0.7);
+    content: '';
+    position: absolute;
+    top: 51%;
+    z-index: 10;
+    right: 27%;
+    transform: translate(-40%, -60%) rotate(90deg);
+    width: 8vh;
+    height: 8vh;
+}
+
+.slick-next:hover {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+.slick-prev:hover {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+}
