@@ -29,11 +29,15 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('code');
             $table->text('discription')->nullable();
-            $table->text('image')->nullable();
+            $table->text('ChannelImg')->nullable();
+            $table->string('SingleJanr')->nullable();
             $table->string('StageDirector')->nullable();
             $table->string('Country')->nullable();
             $table->string('Channel')->nullable();
             $table->string('release_date')->nullable();
+            $table->text('image')->nullable();
+            $table->text('created_at')->nullable();
+            $table->text('updated_at')->nullable();
             $table->string('voice_acting')->nullable();
             $table->string('episode_release_day')->nullable();
             $table->string('number_of_episodes')->nullable();
@@ -90,6 +94,7 @@ class CreateProductsTable extends Migration
             $table->tinyInteger('FilmCatastrophe_movie')->nullable();
             $table->tinyInteger('Film_romantic')->nullable();
             $table->tinyInteger('FilmFantasy')->nullable();
+            $table->tinyInteger('FilmZombie_Werewolves_Vampires');
             $table->tinyInteger('FilmSport')->nullable();
             $table->tinyInteger('Film_military')->nullable();
             $table->tinyInteger('Film_on_real_events')->nullable();
