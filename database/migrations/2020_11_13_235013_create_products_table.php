@@ -90,7 +90,9 @@ class CreateProductsTable extends Migration
             $table->tinyInteger('FilmCatastrophe_movie')->nullable();
             $table->tinyInteger('Film_romantic')->nullable();
             $table->tinyInteger('FilmFantasy')->nullable();
-            $table->tinyInteger('FilmZombie_Werewolves_Vampires')->nullable();
+            $table->tinyInteger('FilmSport')->nullable();
+            $table->tinyInteger('Film_military')->nullable();
+            $table->tinyInteger('Film_on_real_events')->nullable();
             $table->timestamps();
         });
     }
@@ -169,6 +171,9 @@ class CreateProductsTable extends Migration
             $table->dropColumn('Film_romantic');
             $table->dropColumn('FilmFantasy');
             $table->dropColumn('FilmZombie_Werewolves_Vampires');
+            $table->dropColumn('FilmSport');
+            $table->dropColumn('Film_military');
+            $table->dropColumn('Film_on_real_events');
         });
     }
 }
