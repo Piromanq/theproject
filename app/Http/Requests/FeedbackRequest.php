@@ -29,7 +29,7 @@ class FeedbackRequest extends FormRequest
     public function rules()
     {
         return [
-            'img' => 'required|mimes:jpg,jpeg,webp,bmp,png|size:5000',
+            'massage' => 'required|email:rfc,dns,filter|max:255',
         ];
     }
 
@@ -37,8 +37,6 @@ class FeedbackRequest extends FormRequest
     {
         return[
             'required' => 'Это поле обязательно для заполнения',
-            'mimes' => 'Некорректный формат файла.',
-            'size' => 'Размер файла должен быть менее 5Mb.'
         ];
     }
 }

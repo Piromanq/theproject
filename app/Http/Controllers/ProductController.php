@@ -95,13 +95,13 @@ class ProductController extends Controller
             $params['logo_image'] = $request->file('logo_image')->store('products');
         }
 
-        foreach (['FilmAction', 'FilmWestern', 'FilmCrime',
-                     'Action', 'Western', 'Crime', 'Detective', 'Drama', 'Historical_film', 'Comedy',
-                     'Melodrama', 'Musical_film', 'Thriller', 'Fantastic_movie', 'Horror', 'Catastrophe_movie', 'Russian_serials',
-                     'romantic', 'Fantasy','Zombie_Werewolves_Vampires', 'Sport', 'military', 'on_real_events', 'Evil_Spirits_And_Witches',
-                     'Netflix', 'FilmDetective', 'FilmDrama', 'FilmHistorical_film', 'FilmComedy', 'FilmMelodrama', 'FilmMusical_film', 'FilmTragedy',
-                     'FilmTragicomedy', 'FilmThriller', 'FilmFantastic_movie', 'FilmHorror', 'FilmCatastrophe_movie', 'Film_romantic',
-                     'FilmFantasy', 'FilmZombie_Werewolves_Vampires', 'FilmSport', 'Film_military', 'Film_on_real_events',] as $fieldName)
+        foreach (['Molten', 'Repousse', 'Radius13',
+                     'R13', 'R14', 'R15', 'R16', 'R17', 'R18', 'R19',
+                     'R20', 'Filter175X65', 'Filter175X70', 'Filter185X60', 'Filter185X65', 'Filter195X60', 'Filter195X65',
+                     'Filter205X55', 'Filter205X60','Filter215X55', 'Filter215X60', 'Filter215X65', 'Filter225X55', 'Filter225X60', 'Filter235X55',
+                     'Filter235X60', 'summer', 'winter', 'Radius14', 'Radius15', 'Radius16', 'Radius17', 'mounting_holes_4', 'mounting_holes_5', 'hole_diameter_98',
+                     'hole_diameter_100', 'hole_diameter_105', 'hole_diameter_108', 'hole_diameter_110', 'hole_diameter_112', 'hole_diameter_114_3',
+                     'hole_diameter_139', 'center_hole_diameter_58_6', 'center_hole_diameter_60_1', 'center_hole_diameter_98_1', 'center_hole_diameter_66_1',] as $fieldName)
             {
              if (!isset($params[$fieldName])){
                  $params[$fieldName] = 0;

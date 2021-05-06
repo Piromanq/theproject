@@ -17,7 +17,7 @@ public function index(ProductsFilterRequest $request)
 
 
 
-    $products = $productsQuery->latest()->paginate(10);
+    $products = $productsQuery->paginate(10);
     return view('index', compact('products'));
 
 }
@@ -27,51 +27,65 @@ public function genres(ProductsFilterRequest $request){
 
 
   foreach  ([
+                'summer' => 'Лето',
+                'winter' => 'Зима',
+                      'R13' => 'R13',
+                      'R14' => 'R14',
+                      'R15' => 'R15',
+                      'R16' => 'R16',
+                      'R17' => 'R17',
+                      'R18' => 'R18',
+                      'R19' => 'R19',
+                      'R20' => 'R20',
+               'Filter175X65' => 'Filter175X65',
+                      'Filter175X70' => 'Filter175X70',
+                      'Filter185X60' => 'Filter185X60',
+                      'Filter185X65' => 'Filter185X65',
+                      'Filter195X60' => 'Filter195X60',
+                      'Filter195X65' => 'Filter195X65',
+                      'Filter205X55' => 'Filter205X55',
+                      'Filter205X60' => 'Filter205X60',
+                      'Filter215X55' => 'Filter215X55',
+                      'Filter215X60' => 'Filter215X60',
+                        'Filter215X65' => 'Filter215X65',
+                      'Filter225X55' => 'Filter225X55',
+                      'Filter225X60' => 'Filter225X60',
+                      'Filter235X55' => 'Filter235X55',
+                      'Filter235X60' => 'Filter235X60',
+               'Molten' => 'Литой',
+               'Repousse' => 'Штампованный',
+               'Radius13' => 'Радиус 13',
+               'Radius14' => 'Радиус 14',
+               'Radius15' => 'Радиус 15',
+               'Radius16' => 'Радиус 16',
+               'Radius17' => 'Радиус 17',
+               'mounting_holes_4' => '4',
+                'mounting_holes_5' => '5',
+               'hole_diameter_98' => '98',
+               'hole_diameter_100' => '100',
+                'hole_diameter_105' => '105',
+               'hole_diameter_108' => '108',
+                'hole_diameter_110' => '110',
+               'hole_diameter_112' => '112',
+                'hole_diameter_114_3' => '114.3',
+               'hole_diameter_139' => '139',
+                'center_hole_diameter_58_6' => '58.6',
+               'center_hole_diameter_60_1' => '60.1',
+                'center_hole_diameter_98_1' => '98.1',
+                'center_hole_diameter_66_1' => '66.1',
 
-                      'Action' => 'Боевик',
-                      'Western' => 'Вестерн',
-                      'Crime' => 'Криминал',
-                      'Detective' => 'Детектив',
-                      'Drama' => 'Драма',
-                      'Historical_film' => 'Исторический сериал',
-                      'Comedy' => 'Комедия',
-                      'Melodrama' => 'Мелодрама',
-               'Musical_film' => 'Музыкальный',
-                      'Thriller' => 'Триллер',
-                      'Fantastic_movie' => 'Фантастика',
-                      'Horror' => 'Ужасы',
-                      'Catastrophe_movie' => 'Катастрофа',
-                      'Russian_serials' => 'Русские сериалы',
-                      'romantic' => 'Романтика',
-                      'Fantasy' => 'Фэнтези',
-                      'Zombie_Werewolves_Vampires' => 'Зомби вампиры и оборотни',
-                      'Sport' => 'Спорт',
-                      'military' => 'Военный',
-                      'on_real_events' => 'На реальных событиях',
-                      'Evil_Spirits_And_Witches' => 'Нечисть и ведьмы',
-                      'Netflix' => 'Netflix',
-               'FilmAction' => 'Боевик',
-               'FilmWestern' => 'Вестерн',
-               'FilmCrime' => 'Криминал',
-               'FilmDetective' => 'Детектив',
-               'FilmDrama' => 'Драма',
-               'FilmHistorical_film' => 'Исторический фильм',
-               'FilmComedy' => 'Комедия',
-               'FilmMelodrama' => 'Мелодрама',  'FilmMusical_film' => 'Музыкальный фильм',
-               'FilmTragedy' => 'Трагедия',
-               'FilmTragicomedy' => 'Трагикомедия',  'FilmThriller' => 'Триллер',
-               'FilmFantastic_movie' => 'Фантастический фильм',  'FilmHorror' => 'Фильм ужасов',
-               'FilmCatastrophe_movie' => 'Фильм-катастрофа',  'Film_romantic' => 'Романтика',
-               'FilmFantasy' => 'Фэнтези', 'FilmZombie_Werewolves_Vampires' => 'Зомби вампиры и оборотни',
-               'FilmSport' => 'Спорт',  'Film_military' => 'Военный',
-               'Film_on_real_events' => 'На реальных событиях',
+
+
+
                   ] as $field => $title){
 
         if ($request->has($field)) {
          $result =  $productsQ->where($field, 1);
 
          if ($result->count() > 0){
-             $request->session()->flash('success', 'Вы произвели поиск по жанрам.');
+             $request->session()->flash('success', 'Вы произвели поиск по размеру.');
+         } else{
+             $request->session()->flash('success', 'По данному запросу ничего нету :(');
          }
         }
     }
@@ -97,7 +111,7 @@ public function genres(ProductsFilterRequest $request){
     {
         $category = Category::where('code', $code)->first();
         $productsQuery = Product::where('category_id', $category->id);
-        $products = $productsQuery->latest()->paginate(10);
+        $products = $productsQuery->paginate(10);
         return view('category', compact('category', 'products'));
     }
 
@@ -109,7 +123,7 @@ public function genres(ProductsFilterRequest $request){
 
     public function search(ProductsFilterRequest $request){
         $search = $request->search;
-        $products = Product::query()->where('name', 'LIKE', "%{$search}%")->orderBy('name')->paginate(4);
+        $products = Product::query()->where('name', 'LIKE', "%{$search}%")->orderBy('name')->paginate(10);
 
         return view('index', compact('products'));
     }

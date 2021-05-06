@@ -12,128 +12,117 @@
 
         <h1>Вы в категории:   {{$category->name}} <span class="ProductCount">
                 @if($category->id === 1)
-                <br>Количество сериалов: {{$category->products->count()}}</span>
+                <br>Количество Шин: {{$category->products->count()}}</span>
             @endif
             @if($category->id === 2)
-                <br>Количество фильмов: {{$category->products->count()}}</span>
+                <br>Количество Дисков: {{$category->products->count()}}</span>
                 @endif
         </h1>
 
 <h2 class="discription-category">{{$category->discription}}</h2>
+    @if($category->id === 1)
+        <h1>Выберите радиус и размер</h1>
+        @endif
+    @if($category->id === 2)
+        <h1>Выберите разболтовку</h1>
+    @endif
         <div class="row">
             <div class="right_block checkbox_block">
                 <form name="Choses" method="GET" action="{{route('genres')}}">
 
 
                             @if($category->id == 1)
-                        <div class="col-sm-2 col-md-2">
-                 <input style="display:none" type="checkbox" name="Action" onclick="isChecked();" id="Action" @if(request()->has('Action')) checked @endif>Боевик
-                                <label for="Action" class="toggle"><span></span></label>
-                        </div>
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Western" onclick="isChecked();" id="Western" @if(request()->has('Western')) checked @endif>Вестерн
-                            <label for="Western" class="toggle"><span></span></label>
-                        </div>
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Crime" onclick="isChecked();" id="Crime" @if(request()->has('Crime')) checked @endif>Криминал
-                            <label for="Crime" class="toggle"><span></span></label>
+                                <div class="main_wrapper__section">
+                        <div class="select another_width_radius">
+                            <span>Радиус</span>
+                            <div class="checkselect">
+                                <label>       <input style="display:none" type="checkbox" name="R13" onclick="isChecked();" id="R13" @if(request()->has('R13')) checked @endif>R13
+                                    <label for="R13" class="toggle"><span></span></label></label>
+
+                                <label>   <input style="display:none" type="checkbox" name="R14" onclick="isChecked();" id="R14" @if(request()->has('R14')) checked @endif>R14
+                                    <label for="R14" class="toggle"><span></span></label></label>
+
+                                    <label>         <input style="display:none" type="checkbox" name="R15" onclick="isChecked();" id="R15" @if(request()->has('R15')) checked @endif>R15
+                                        <label for="R15" class="toggle"><span></span></label></label>
+
+                                        <label>        <input style="display:none" type="checkbox" name="R16" onclick="isChecked();" id="R16" @if(request()->has('R16')) checked @endif>R16
+                                            <label for="R16" class="toggle"><span></span></label></label>
+
+                                            <label>           <input style="display:none" type="checkbox" name="R17" onclick="isChecked();" id="R17" @if(request()->has('R17')) checked @endif>R17
+                                                <label for="R17" class="toggle"><span></span></label></label>
+
+                                                <label>        <input style="display:none" type="checkbox" name="R18" onclick="isChecked();" id="R18" @if(request()->has('R18')) checked @endif>R18
+                                                    <label for="R18" class="toggle"><span></span></label></label>
+
+                                                    <label>        <input style="display:none" type="checkbox" name="R19" onclick="isChecked();" id="R19" @if(request()->has('R19')) checked @endif>R19
+                                                        <label for="R19" class="toggle"><span></span></label></label>
+
+                                <label>           <input style="display:none" type="checkbox" name="R20" onclick="isChecked();" id="R20" @if(request()->has('R20')) checked @endif>R20
+                                    <label for="R20" class="toggle"><span></span></label></label>
+                            </div>
                         </div>
 
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Detective" onclick="isChecked();" id="Detective" @if(request()->has('Detective')) checked @endif>Детектив
-                            <label for="Detective" class="toggle"><span></span></label>
+                        <div class="select another_width__type">
+                            <span>Профиль, %</span>
+                            <div class="checkselect">
+                                <label>           <input style="display:none" type="checkbox" name="Filter175X65" onclick="isChecked();" id="Filter175X65" @if(request()->has('Filter175X65')) checked @endif>175/65
+                                    <label for="Filter175X65" class="toggle"><span></span></label></label>
+
+                                <label>                <input style="display:none" type="checkbox" name="Filter175X70" onclick="isChecked();" id="Filter175X70" @if(request()->has('Filter175X70')) checked @endif>175/70
+                                    <label for="Filter175X70" class="toggle"><span></span></label></label>
+
+                                    <label>        <input style="display:none" type="checkbox" name="Filter185X60" onclick="isChecked();" id="Filter185X60" @if(request()->has('Filter185X60')) checked @endif>185/60
+                                        <label for="Filter185X60" class="toggle"><span></span></label></label>
+
+                                    <label>           <input style="display:none" type="checkbox" name="Filter185X65" onclick="isChecked();" id="Filter185X65" @if(request()->has('Filter185X65')) checked @endif>185/65
+                                        <label for="Filter185X65" class="toggle"><span></span></label></label>
+
+                                    <label>                <input style="display:none" type="checkbox" name="Filter195X60" onclick="isChecked();" id="Filter195X60" @if(request()->has('Filter195X60')) checked @endif>195/60
+                                        <label for="Filter195X60" class="toggle"><span></span></label></label>
+
+                                    <label>            <input style="display:none" type="checkbox" name="Filter195X65" onclick="isChecked();" id="Filter195X65" @if(request()->has('Filter195X65')) checked @endif>195/65
+                                        <label for="Filter195X65" class="toggle"><span></span></label></label>
+
+                                    <label>                    <input style="display:none" type="checkbox" name="Filter205X55" onclick="isChecked();" id="Filter205X55" @if(request()->has('Filter205X55')) checked @endif>205/55
+                                        <label for="Filter205X55" class="toggle"><span></span></label></label>
+
+                                    <label>                <input style="display:none" type="checkbox" name="Filter205X60" onclick="isChecked();" id="Filter205X60" @if(request()->has('Filter205X60')) checked @endif>205/60
+                                        <label for="Filter205X60" class="toggle"><span></span></label></label>
+
+                                    <label>             <input style="display:none" type="checkbox" name="Filter215X55" onclick="isChecked();" id="Filter215X55" @if(request()->has('Filter215X55')) checked @endif>215/55
+                                        <label for="Filter215X55" class="toggle"><span></span></label></label>
+
+                                    <label>               <input style="display:none" type="checkbox" name="Filter215X60" onclick="isChecked();" id="Filter215X60" @if(request()->has('Filter215X60')) checked @endif>215/60
+                                        <label for="Filter215X60" class="toggle"><span></span></label></label>
+
+                                <label>             <input style="display:none" type="checkbox" name="Filter215X65" onclick="isChecked();" id="Filter215X65" @if(request()->has('Filter215X65')) checked @endif>215/65
+                                    <label for="Filter215X65" class="toggle"><span></span></label></label>
+
+                                    <label>               <input style="display:none" type="checkbox" name="Filter225X55" onclick="isChecked();" id="Filter225X55" @if(request()->has('Filter225X55')) checked @endif>225/55
+                                        <label for="Filter225X55" class="toggle"><span></span></label></label>
+
+                                    <label>           <input style="display:none" type="checkbox" name="Filter225X60" onclick="isChecked();" id="Filter225X60" @if(request()->has('Filter225X60')) checked @endif>225/60
+                                        <label for="Filter225X60" class="toggle"><span></span></label></label>
+
+                                    <label>                      <input style="display:none" type="checkbox" name="Filter235X55" onclick="isChecked();" id="Filter235X55" @if(request()->has('Filter235X55')) checked @endif>235/55
+                                        <label for="Filter235X55" class="toggle"><span></span></label></label>
+
+                                    <label>              <input style="display:none" type="checkbox" name="Filter235X60" onclick="isChecked();" id="Filter235X60" @if(request()->has('Filter235X60')) checked @endif>235/60
+                                        <label for="Filter235X60" class="toggle"><span></span></label></label>
+                            </div>
                         </div>
 
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Drama" onclick="isChecked();" id="Drama" @if(request()->has('Drama')) checked @endif>Драма
-                            <label for="Drama" class="toggle"><span></span></label>
-                        </div>
+                                    <div class="select another_width__type">
+                                        <span>Сезонность</span>
+                                        <div class="checkselect">
+                                            <label>           <input style="display:none" type="checkbox" name="summer" onclick="isChecked();" id="summer" @if(request()->has('summer')) checked @endif>Лето
+                                                <label for="summer" class="toggle"><span></span></label></label>
 
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Historical_film" onclick="isChecked();" id="Historical_film" @if(request()->has('Historical_film')) checked @endif>История
-                            <label for="Historical_film" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Comedy" onclick="isChecked();" id="Comedy" @if(request()->has('Comedy')) checked @endif>Комедия
-                            <label for="Comedy" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Melodrama" onclick="isChecked();" id="Melodrama" @if(request()->has('Melodrama')) checked @endif>Мелодрама
-                            <label for="Melodrama" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Musical_film" onclick="isChecked();" id="Musical_film" @if(request()->has('Musical_film')) checked @endif>Музыка
-                            <label for="Musical_film" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Thriller" onclick="isChecked();" id="Thriller" @if(request()->has('Thriller')) checked @endif>Триллер
-                            <label for="Thriller" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Fantastic_movie" onclick="isChecked();" id="Fantastic_movie" @if(request()->has('Fantastic_movie')) checked @endif>Фантастика
-                            <label for="Fantastic_movie" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Horror" onclick="isChecked();" id="Horror" @if(request()->has('Horror')) checked @endif>Ужасы
-                            <label for="Horror" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Catastrophe_movie" onclick="isChecked();" id="Catastrophe_movie" @if(request()->has('Catastrophe_movie')) checked @endif>Катастрофа
-                            <label for="Catastrophe_movie" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Russian_serials" onclick="isChecked();" id="Russian_serials" @if(request()->has('Russian_serials')) checked @endif>Русские сериал
-                            <label for="Russian_serials" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="romantic" onclick="isChecked();" id="romantic" @if(request()->has('romantic')) checked @endif>Романтика
-                            <label for="romantic" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Fantasy" onclick="isChecked();" id="Fantasy" @if(request()->has('Fantasy')) checked @endif>Фэнтези
-                            <label for="Fantasy" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Zombie_Werewolves_Vampires" onclick="isChecked();" id="Zombie_Werewolves_Vampires" @if(request()->has('Zombie_Werewolves_Vampires')) checked @endif>Зомби, вампиры и оборотни
-                            <label for="Zombie_Werewolves_Vampires" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Sport" onclick="isChecked();" id="Sport" @if(request()->has('Sport')) checked @endif>Спорт
-                            <label for="Sport" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="military" onclick="isChecked();" id="military" @if(request()->has('military')) checked @endif>Военный
-                            <label for="military" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="on_real_events" onclick="isChecked();" id="on_real_events" @if(request()->has('on_real_events')) checked @endif>На реальных событиях
-                            <label for="on_real_events" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Evil_Spirits_And_Witches" onclick="isChecked();" id="Evil_Spirits_And_Witches" @if(request()->has('Evil_Spirits_And_Witches')) checked @endif>Нечисть и ведьмы
-                            <label for="Evil_Spirits_And_Witches" class="toggle"><span></span></label>
-                        </div>
-
-                        <div class="col-sm-2 col-md-2">
-                            <input style="display:none" type="checkbox" name="Netflix" onclick="isChecked();" id="Netflix" @if(request()->has('Netflix')) checked @endif>Netflix
-                            <label for="Netflix" class="toggle"><span></span></label>
-                        </div>
-
+                                            <label>                <input style="display:none" type="checkbox" name="winter" onclick="isChecked();" id="winter" @if(request()->has('winter')) checked @endif>Зима
+                                                <label for="winter" class="toggle"><span></span></label></label>
+                                        </div>
+                                    </div>
+                                </div>
                         <div class="filter-ButtonGroup">
 
                             <button type="submit" id="throwOnn" disabled="disabled" class="btn btn-success">Фильтровать</button>
@@ -142,36 +131,40 @@
 
                                     <script>
                                function isChecked() {
-                                   var Action = document.getElementById('Action').checked;
-                                    var Western = document.getElementById('Western').checked;
-                                   var Crime = document.getElementById('Crime').checked;
-                                   var Detective = document.getElementById('Detective').checked;
-                                   var Drama = document.getElementById('Drama').checked;
-                                   var Historical_film = document.getElementById('Historical_film').checked;
-                                   var Comedy = document.getElementById('Comedy').checked;
-                                   var Melodrama = document.getElementById('Melodrama').checked;
-                                   var Musical_film = document.getElementById('Musical_film').checked;
-                                   var Thriller = document.getElementById('Thriller').checked;
-                                   var Fantastic_movie = document.getElementById('Fantastic_movie').checked;
-                                   var Horror = document.getElementById('Horror').checked;
-                                   var Catastrophe_movie = document.getElementById('Catastrophe_movie').checked;
-                                   var Russian_serials = document.getElementById('Russian_serials').checked;
-                                   var romantic = document.getElementById('romantic').checked;
-                                   var Fantasy = document.getElementById('Fantasy').checked;
-                                   var Zombie_Werewolves_Vampires = document.getElementById('Zombie_Werewolves_Vampires').checked;
-                                   var Sport = document.getElementById('Sport').checked;
-                                   var military = document.getElementById('military').checked;
-                                   var on_real_events = document.getElementById('on_real_events').checked;
-                                   var Evil_Spirits_And_Witches = document.getElementById('Evil_Spirits_And_Witches').checked;
-                                   var Netflix = document.getElementById('Netflix').checked;
+                                   var R13 = document.getElementById('R13').checked;
+                                    var R14 = document.getElementById('R14').checked;
+                                   var R15 = document.getElementById('R15').checked;
+                                   var R16 = document.getElementById('R16').checked;
+                                   var R17 = document.getElementById('R17').checked;
+                                   var R18 = document.getElementById('R18').checked;
+                                   var R19 = document.getElementById('R19').checked;
+                                   var R20 = document.getElementById('R20').checked;
+                                   var Filter175X65 = document.getElementById('Filter175X65').checked;
+                                   var Filter175X70 = document.getElementById('Filter175X70').checked;
+                                   var Filter185X60 = document.getElementById('Filter185X60').checked;
+                                   var Filter185X65 = document.getElementById('Filter185X65').checked;
+                                   var Filter195X60 = document.getElementById('Filter195X60').checked;
+                                   var Filter195X65 = document.getElementById('Filter195X65').checked;
+                                   var Filter205X55 = document.getElementById('Filter205X55').checked;
+                                   var Filter205X60 = document.getElementById('Filter205X60').checked;
+                                   var Filter215X55 = document.getElementById('Filter215X55').checked;
+                                   var Filter215X60 = document.getElementById('Filter215X60').checked;
+                                   var Filter215X65 = document.getElementById('Filter215X65').checked;
+                                   var Filter225X55 = document.getElementById('Filter225X55').checked;
+                                   var Filter225X60 = document.getElementById('Filter225X60').checked;
+                                   var Filter235X55 = document.getElementById('Filter235X55').checked;
+                                   var Filter235X60 = document.getElementById('Filter235X60').checked;
+                                   var summer = document.getElementById('summer').checked;
+                                   var winter = document.getElementById('winter').checked;
                                    var hide = document.getElementById('throwOff');
 
                                    hide.classList.add("hide");
 
-                                    if(Action === false && Western === false && Crime === false && Detective === false && Drama === false && Historical_film === false
-                                        && Comedy === false && Melodrama === false && Musical_film === false && Thriller === false && Fantastic_movie === false && Horror === false
-                                        && Catastrophe_movie === false && Russian_serials === false && romantic === false && Fantasy === false && Zombie_Werewolves_Vampires === false && Sport === false
-                                        && military === false && on_real_events === false && Evil_Spirits_And_Witches === false && Netflix === false){
+                                    if(R13 === false && R14 === false && R15 === false && R16 === false && R17 === false && R18 === false
+                                        && R19 === false && R20 === false && Filter175X65 === false && Filter175X70 === false && Filter185X60 === false && Filter185X65 === false
+                                        && Filter195X60 === false && Filter195X65 === false && Filter205X55 === false && Filter205X60 === false && Filter215X55 === false && Filter215X60 === false
+                                        && Filter225X55 === false && Filter225X60 === false && Filter235X55 === false && Filter235X60 === false && summer === false
+                                        && winter === false && Filter215X65 === false ){
                                         document.getElementById('throwOnn').setAttribute("disabled", "disabled");
                                         return false;
                                     }else{
@@ -183,35 +176,39 @@
                                }
 
                                function isOn (){
-                                   var Action = document.getElementById('Action').checked = false;
-                                   var Western = document.getElementById('Western').checked = false;
-                                   var Crime = document.getElementById('Crime').checked = false;
-                                   var Detective = document.getElementById('Detective').checked = false;
-                                   var Drama = document.getElementById('Drama').checked = false;
-                                   var Historical_film = document.getElementById('Historical_film').checked = false;
-                                   var Comedy = document.getElementById('Comedy').checked = false;
-                                   var Melodrama = document.getElementById('Melodrama').checked = false;
-                                   var Musical_film = document.getElementById('Musical_film').checked = false;
-                                   var Thriller = document.getElementById('Thriller').checked = false;
-                                   var Fantastic_movie = document.getElementById('Fantastic_movie').checked = false;
-                                   var Horror = document.getElementById('Horror').checked = false;
-                                   var Catastrophe_movie = document.getElementById('Catastrophe_movie').checked = false;
-                                   var Russian_serials = document.getElementById('Russian_serials').checked = false;
-                                   var romantic = document.getElementById('romantic').checked = false;
-                                   var Fantasy = document.getElementById('Fantasy').checked = false;
-                                   var Zombie_Werewolves_Vampires = document.getElementById('Zombie_Werewolves_Vampires').checked = false;
-                                   var Sport = document.getElementById('Sport').checked = false;
-                                   var military = document.getElementById('military').checked = false;
-                                   var on_real_events = document.getElementById('on_real_events').checked = false;
-                                   var Evil_Spirits_And_Witches = document.getElementById('Evil_Spirits_And_Witches').checked = false;
-                                   var Netflix = document.getElementById('Netflix').checked = false;
+                                   var R13 = document.getElementById('R13').checked = false;
+                                   var R14 = document.getElementById('R14').checked = false;
+                                   var R15 = document.getElementById('R15').checked = false;
+                                   var R16 = document.getElementById('R16').checked = false;
+                                   var R17 = document.getElementById('R17').checked = false;
+                                   var R18 = document.getElementById('R18').checked = false;
+                                   var R19 = document.getElementById('R19').checked = false;
+                                   var R20 = document.getElementById('R20').checked = false;
+                                   var Filter175X65 = document.getElementById('Filter175X65').checked = false;
+                                   var Filter175X70 = document.getElementById('Filter175X70').checked = false;
+                                   var Filter185X60 = document.getElementById('Filter185X60').checked = false;
+                                   var Filter185X65 = document.getElementById('Filter185X65').checked = false;
+                                   var Filter195X60 = document.getElementById('Filter195X60').checked = false;
+                                   var Filter195X65 = document.getElementById('Filter195X65').checked = false;
+                                   var Filter205X55 = document.getElementById('Filter205X55').checked = false;
+                                   var Filter205X60 = document.getElementById('Filter205X60').checked = false;
+                                   var Filter215X55 = document.getElementById('Filter215X55').checked = false;
+                                   var Filter215X60 = document.getElementById('Filter215X60').checked = false;
+                                   var Filter215X65 = document.getElementById('Filter215X65').checked = false;
+                                   var Filter225X55 = document.getElementById('Filter225X55').checked = false;
+                                   var Filter225X60 = document.getElementById('Filter225X60').checked = false;
+                                   var Filter235X55 = document.getElementById('Filter235X55').checked = false;
+                                   var Filter235X60 = document.getElementById('Filter235X60').checked = false;
+                                   var summer = document.getElementById('summer').checked = false;
+                                   var winter = document.getElementById('winter').checked = false;
                                    var hide = document.getElementById('throwOff');
                                    hide.classList.add("hide");
 
-                                   if(Action === false && Western === false && Crime === false && Detective === false && Drama === false && Historical_film === false
-                                       && Comedy === false && Melodrama === false && Musical_film === false && Thriller === false && Fantastic_movie === false && Horror === false
-                                       && Catastrophe_movie === false && Russian_serials === false && romantic === false && Fantasy === false && Zombie_Werewolves_Vampires === false && Sport === false
-                                       && military === false && on_real_events === false && Evil_Spirits_And_Witches === false && Netflix === false){
+                                   if(R13 === false && R14 === false && R15 === false && R16 === false && R17 === false && R18 === false
+                                       && R19 === false && R20 === false && Filter175X65 === false && Filter175X70 === false && Filter185X60 === false && Filter185X65 === false
+                                       && Filter195X60 === false && Filter195X65 === false && Filter205X55 === false && Filter205X60 === false && Filter215X55 === false && Filter215X60 === false
+                                       && Filter225X55 === false && Filter225X60 === false && Filter235X55 === false && Filter235X60 === false && summer === false
+                                       && winter === false && Filter215X65 === false){
                                        document.getElementById('throwOnn').setAttribute("disabled", "disabled");
 
                                        return false;
@@ -228,139 +225,133 @@
                             @endif
                             @if($category->id == 2)
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmAction" onclick="isCheckedFilm();" id="FilmAction" @if(request()->has('FilmAction')) checked @endif>Боевик
-                                        <label for="FilmAction" class="toggle"><span></span></label>
+                                <div class="main_wrapper__section">
+                                    <div class="select another_width__type">
+                                        <span>Тип диска</span>
+                                        <div class="checkselect">
+                                            <label><input style="display:none" type="checkbox" name="Molten" onclick="isCheckedFilm();"
+                                                          id="Molten" @if(request()->has('Molten')) checked @endif>Литой
+                                                <label for="Molten" class="toggle"><span></span></label></label>
+
+                                            <label><input style="display:none" type="checkbox" name="Repousse" onclick="isCheckedFilm();"
+                                                          id="Repousse" @if(request()->has('Repousse')) checked @endif>Штампованный
+                                                <label for="Repousse" class="toggle"><span></span></label></label>
+                                        </div>
                                     </div>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmWestern" onclick="isCheckedFilm();" id="FilmWestern" @if(request()->has('FilmWestern')) checked @endif>Вестерн
-                                        <label for="FilmWestern" class="toggle"><span></span></label>
+                                    <div class="select another_width_radius">
+                                        <span>Радиус</span>
+                                        <div class="checkselect">
+                                            <label>         <input style="display:none" type="checkbox" name="Radius13" onclick="isCheckedFilm();" id="Radius13" @if(request()->has('Radius13')) checked @endif>13
+                                                <label for="Radius13" class="toggle"><span></span></label></label>
+
+                                            <label>                <input style="display:none" type="checkbox" name="Radius14" onclick="isCheckedFilm();" id="Radius14" @if(request()->has('Radius14')) checked @endif>14
+                                                <label for="Radius14" class="toggle"><span></span></label></label>
+
+                                            <label>                 <input style="display:none" type="checkbox" name="Radius15" onclick="isCheckedFilm();" id="Radius15" @if(request()->has('Radius15')) checked @endif>15
+                                                <label for="Radius15" class="toggle"><span></span></label></label>
+
+                                            <label>            <input style="display:none" type="checkbox" name="Radius16" onclick="isCheckedFilm();" id="Radius16" @if(request()->has('Radius16')) checked @endif>16
+                                                <label for="Radius16" class="toggle"><span></span></label></label>
+
+                                            <label>                 <input style="display:none" type="checkbox" name="Radius17" onclick="isCheckedFilm();" id="Radius17" @if(request()->has('Radius17')) checked @endif>17
+                                                <label for="Radius17" class="toggle"><span></span></label></label>
+                                        </div>
                                     </div>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmCrime" onclick="isCheckedFilm();" id="FilmCrime" @if(request()->has('FilmCrime')) checked @endif>Криминал
-                                        <label for="FilmCrime" class="toggle"><span></span></label>
+                                    <div class="select another_width__number_holes">
+                                        <span>Кол-во отверстий</span>
+                                        <div class="checkselect">
+                                            <label>         <input style="display:none" type="checkbox" name="mounting_holes_4" onclick="isCheckedFilm();" id="mounting_holes_4" @if(request()->has('mounting_holes_4')) checked @endif>4
+                                                <label for="mounting_holes_4" class="toggle"><span></span></label></label>
+
+                                            <label>                <input style="display:none" type="checkbox" name="mounting_holes_5" onclick="isCheckedFilm();" id="mounting_holes_5" @if(request()->has('mounting_holes_5')) checked @endif>5
+                                                <label for="mounting_holes_5" class="toggle"><span></span></label></label>
+                                        </div>
                                     </div>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmDrama" onclick="isCheckedFilm();" id="FilmDrama" @if(request()->has('FilmDrama')) checked @endif>Драма
-                                        <label for="FilmDrama" class="toggle"><span></span></label>
+                                    <div class="select another_width__pcd">
+                                        <span>Диаметр расположения отверстий (PCD), мм</span>
+                                        <div class="checkselect">
+                                            <label>          <input style="display:none" type="checkbox" name="hole_diameter_98" onclick="isCheckedFilm();" id="hole_diameter_98" @if(request()->has('hole_diameter_98')) checked @endif>98
+                                                <label for="hole_diameter_98" class="toggle"><span></span></label></label>
+
+                                            <label>                <input style="display:none" type="checkbox" name="hole_diameter_100" onclick="isCheckedFilm();" id="hole_diameter_100" @if(request()->has('hole_diameter_100')) checked @endif>100
+                                                <label for="hole_diameter_100" class="toggle"><span></span></label></label>
+
+                                            <label>           <input style="display:none" type="checkbox" name="hole_diameter_105" onclick="isCheckedFilm();" id="hole_diameter_105" @if(request()->has('hole_diameter_105')) checked @endif>105
+                                                <label for="hole_diameter_105" class="toggle"><span></span></label></label>
+
+                                            <label>                        <input style="display:none" type="checkbox" name="hole_diameter_108" onclick="isCheckedFilm();" id="hole_diameter_108" @if(request()->has('hole_diameter_108')) checked @endif>108
+                                                <label for="hole_diameter_108" class="toggle"><span></span></label></label>
+
+                                            <label>                 <input style="display:none" type="checkbox" name="hole_diameter_110" onclick="isCheckedFilm();" id="hole_diameter_110" @if(request()->has('hole_diameter_110')) checked @endif>110
+                                                <label for="hole_diameter_110" class="toggle"><span></span></label></label>
+
+                                            <label>                <input style="display:none" type="checkbox" name="hole_diameter_112" onclick="isCheckedFilm();" id="hole_diameter_112" @if(request()->has('hole_diameter_112')) checked @endif>112
+                                                <label for="hole_diameter_112" class="toggle"><span></span></label></label>
+
+                                            <label>                             <input style="display:none" type="checkbox" name="hole_diameter_114_3" onclick="isCheckedFilm();" id="hole_diameter_114_3" @if(request()->has('hole_diameter_114_3')) checked @endif>114.3
+                                                <label for="hole_diameter_114_3" class="toggle"><span></span></label></label>
+
+                                            <label>                              <input style="display:none" type="checkbox" name="hole_diameter_139" onclick="isCheckedFilm();" id="hole_diameter_139" @if(request()->has('hole_diameter_139')) checked @endif>139
+                                                <label for="hole_diameter_139" class="toggle"><span></span></label></label>
+                                        </div>
+
                                     </div>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmHistorical_film" onclick="isCheckedFilm();" id="FilmHistorical_film" @if(request()->has('FilmHistorical_film')) checked @endif>История
-                                        <label for="FilmHistorical_film" class="toggle"><span></span></label>
-                                    </div>
+                                    <div class="select another_width__co">
+                                        <span>Диаметр центрального отверстия диска, мм</span>
+                                        <div class="checkselect">
+                                            <label>            <input style="display:none" type="checkbox" name="center_hole_diameter_58_6" onclick="isCheckedFilm();" id="center_hole_diameter_58_6" @if(request()->has('center_hole_diameter_58_6')) checked @endif>58.6
+                                                <label for="center_hole_diameter_58_6" class="toggle"><span></span></label></label>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmComedy" onclick="isCheckedFilm();" id="FilmComedy" @if(request()->has('FilmComedy')) checked @endif>Комедия
-                                        <label for="FilmComedy" class="toggle"><span></span></label>
-                                    </div>
+                                            <label>                       <input style="display:none" type="checkbox" name="center_hole_diameter_60_1" onclick="isCheckedFilm();" id="center_hole_diameter_60_1" @if(request()->has('center_hole_diameter_60_1')) checked @endif>60.1
+                                                <label for="center_hole_diameter_60_1" class="toggle"><span></span></label></label>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmMelodrama" onclick="isCheckedFilm();" id="FilmMelodrama" @if(request()->has('FilmMelodrama')) checked @endif>Мелодрама
-                                        <label for="FilmMelodrama" class="toggle"><span></span></label>
-                                    </div>
+                                            <label>                  <input style="display:none" type="checkbox" name="center_hole_diameter_66_1" onclick="isCheckedFilm();" id="center_hole_diameter_66_1" @if(request()->has('center_hole_diameter_66_1')) checked @endif>66.1
+                                                <label for="center_hole_diameter_66_1" class="toggle"><span></span></label></label>
 
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmMusical_film" onclick="isCheckedFilm();" id="FilmMusical_film" @if(request()->has('FilmMusical_film')) checked @endif>Музыка
-                                        <label for="FilmMusical_film" class="toggle"><span></span></label>
+                                            <label>               <input style="display:none" type="checkbox" name="center_hole_diameter_98_1" onclick="isCheckedFilm();" id="center_hole_diameter_98_1" @if(request()->has('center_hole_diameter_98_1')) checked @endif>98.1
+                                                <label for="center_hole_diameter_98_1" class="toggle"><span></span></label></label>
+                                        </div>
                                     </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmTragedy" onclick="isCheckedFilm();" id="FilmTragedy" @if(request()->has('FilmTragedy')) checked @endif>Трагедия
-                                        <label for="FilmTragedy" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmTragicomedy" onclick="isCheckedFilm();" id="FilmTragicomedy" @if(request()->has('FilmTragicomedy')) checked @endif>Трагикомедия
-                                        <label for="FilmTragicomedy" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmThriller" onclick="isCheckedFilm();" id="FilmThriller" @if(request()->has('FilmThriller')) checked @endif>Триллер
-                                        <label for="FilmThriller" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmFantastic_movie" onclick="isCheckedFilm();" id="FilmFantastic_movie" @if(request()->has('FilmFantastic_movie')) checked @endif>Фантастика
-                                        <label for="FilmFantastic_movie" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmHorror" onclick="isCheckedFilm();" id="FilmHorror" @if(request()->has('FilmHorror')) checked @endif>Ужасы
-                                        <label for="FilmHorror" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmCatastrophe_movie" onclick="isCheckedFilm();" id="FilmCatastrophe_movie" @if(request()->has('FilmCatastrophe_movie')) checked @endif>Катастрофа
-                                        <label for="FilmCatastrophe_movie" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="Film_romantic" onclick="isCheckedFilm();" id="Film_romantic" @if(request()->has('Film_romantic')) checked @endif>Романтика
-                                        <label for="Film_romantic" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmFantasy" onclick="isCheckedFilm();" id="FilmFantasy" @if(request()->has('FilmFantasy')) checked @endif>Фэнтези
-                                        <label for="FilmFantasy" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmZombie_Werewolves_Vampires" onclick="isCheckedFilm();" id="FilmZombie_Werewolves_Vampires" @if(request()->has('FilmZombie_Werewolves_Vampires')) checked @endif>Зомби, вампиры и оборотни
-                                        <label for="FilmZombie_Werewolves_Vampires" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="FilmSport" onclick="isCheckedFilm();" id="FilmSport" @if(request()->has('FilmSport')) checked @endif>Спорт
-                                        <label for="FilmSport" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="Film_military" onclick="isCheckedFilm();" id="Film_military" @if(request()->has('Film_military')) checked @endif>Военный
-                                        <label for="Film_military" class="toggle"><span></span></label>
-                                    </div>
-
-                                    <div class="col-sm-2 col-md-2">
-                                        <input style="display:none" type="checkbox" name="Film_on_real_events" onclick="isCheckedFilm();" id="Film_on_real_events" @if(request()->has('Film_on_real_events')) checked @endif>На реальных событиях
-                                        <label for="Film_on_real_events" class="toggle"><span></span></label>
-                                    </div>
-
+                                </div>
                                     <div class="filter-ButtonGroup">
                                         <button type="submit" id="throwOnn" disabled="disabled" class="btn btn-success">Фильтровать</button>
                                         <a id="throwOff" class="btn btn-secondary hide" onclick="isOnFilm();">Сбросить фильтры</a>
                                     </div>
-
                                     <script>
                                         function isCheckedFilm() {
-                                            var FilmAction = document.getElementById('FilmAction').checked;
-                                            var FilmWestern = document.getElementById('FilmWestern').checked;
-                                            var FilmCrime = document.getElementById('FilmCrime').checked;
-                                            var FilmDrama = document.getElementById('FilmDrama').checked;
-                                            var FilmHistorical_film = document.getElementById('FilmHistorical_film').checked;
-                                            var FilmComedy = document.getElementById('FilmComedy').checked;
-                                            var FilmMelodrama = document.getElementById('FilmMelodrama').checked;
-                                            var FilmMusical_film = document.getElementById('FilmMusical_film').checked;
-                                            var FilmTragedy = document.getElementById('FilmTragedy').checked;
-                                            var FilmTragicomedy = document.getElementById('FilmTragicomedy').checked;
-                                            var FilmThriller = document.getElementById('FilmThriller').checked;
-                                            var FilmFantastic_movie = document.getElementById('FilmFantastic_movie').checked;
-                                            var FilmHorror = document.getElementById('FilmHorror').checked;
-                                            var FilmCatastrophe_movie = document.getElementById('FilmCatastrophe_movie').checked;
-                                            var Film_romantic = document.getElementById('Film_romantic').checked;
-                                            var FilmFantasy = document.getElementById('FilmFantasy').checked;
-                                            var FilmZombie_Werewolves_Vampires = document.getElementById('FilmZombie_Werewolves_Vampires').checked;
-                                            var FilmSport = document.getElementById('FilmSport').checked;
-                                            var Film_military = document.getElementById('Film_military').checked;
-                                            var Film_on_real_events = document.getElementById('Film_on_real_events').checked;
+                                            var Molten = document.getElementById('Molten').checked;
+                                            var Repousse = document.getElementById('Repousse').checked;
+                                            var Radius13 = document.getElementById('Radius13').checked;
+                                            var Radius14 = document.getElementById('Radius14').checked;
+                                            var Radius15 = document.getElementById('Radius15').checked;
+                                            var Radius16 = document.getElementById('Radius16').checked;
+                                            var Radius17 = document.getElementById('Radius17').checked;
+                                            var mounting_holes_4 = document.getElementById('mounting_holes_4').checked;
+                                            var mounting_holes_5 = document.getElementById('mounting_holes_5').checked;
+                                            var hole_diameter_98 = document.getElementById('hole_diameter_98').checked;
+                                            var hole_diameter_100 = document.getElementById('hole_diameter_100').checked;
+                                            var hole_diameter_105 = document.getElementById('hole_diameter_105').checked;
+                                            var hole_diameter_108 = document.getElementById('hole_diameter_108').checked;
+                                            var hole_diameter_110 = document.getElementById('hole_diameter_110').checked;
+                                            var hole_diameter_112 = document.getElementById('hole_diameter_112').checked;
+                                            var hole_diameter_114_3 = document.getElementById('hole_diameter_114_3').checked;
+                                            var hole_diameter_139 = document.getElementById('hole_diameter_139').checked;
+                                            var center_hole_diameter_58_6 = document.getElementById('center_hole_diameter_58_6').checked;
+                                            var center_hole_diameter_60_1 = document.getElementById('center_hole_diameter_60_1').checked;
+                                            var center_hole_diameter_98_1 = document.getElementById('center_hole_diameter_98_1').checked;
+                                            var center_hole_diameter_66_1 = document.getElementById('center_hole_diameter_66_1').checked;
                                             var hide = document.getElementById('throwOff');
                                             hide.classList.add("hide");
 
-                                            if(FilmAction === false && FilmWestern === false && FilmCrime === false && FilmDrama === false && FilmHistorical_film === false && FilmComedy === false && FilmMelodrama === false && FilmMusical_film === false
-                                                && FilmTragedy === false && FilmTragicomedy === false && FilmThriller === false && FilmFantastic_movie === false && FilmHorror === false && FilmCatastrophe_movie === false
-                                                && Film_romantic === false && FilmFantasy === false && FilmZombie_Werewolves_Vampires === false && FilmSport === false && Film_military === false && Film_on_real_events === false){
+                                            if(Molten === false && Repousse === false && Radius13 === false && Radius14 === false && Radius15 === false && Radius16 === false && Radius17 === false && mounting_holes_4 === false
+                                                && mounting_holes_5 === false && hole_diameter_98 === false && hole_diameter_100 === false && hole_diameter_105 === false && hole_diameter_108 === false && hole_diameter_110 === false
+                                                && hole_diameter_112 === false && hole_diameter_114_3 === false && hole_diameter_139 === false && center_hole_diameter_58_6 === false && center_hole_diameter_60_1 === false
+                                                && center_hole_diameter_98_1 === false && center_hole_diameter_66_1 === false
+                                            ){
                                                 document.getElementById('throwOnn').setAttribute("disabled", "disabled");
                                                 return false;
                                             }else{
@@ -372,32 +363,35 @@
                                         }
 
                                         function isOnFilm (){
-                                            var FilmAction = document.getElementById('FilmAction').checked = false;
-                                            var FilmWestern = document.getElementById('FilmWestern').checked = false;
-                                            var FilmCrime = document.getElementById('FilmCrime').checked = false;
-                                            var FilmDrama = document.getElementById('FilmDrama').checked = false;
-                                            var FilmHistorical_film = document.getElementById('FilmHistorical_film').checked = false;
-                                            var FilmComedy = document.getElementById('FilmComedy').checked = false;
-                                            var FilmMelodrama = document.getElementById('FilmMelodrama').checked = false;
-                                            var FilmMusical_film = document.getElementById('FilmMusical_film').checked = false;
-                                            var FilmTragedy = document.getElementById('FilmTragedy').checked = false;
-                                            var FilmTragicomedy = document.getElementById('FilmTragicomedy').checked = false;
-                                            var FilmThriller = document.getElementById('FilmThriller').checked = false;
-                                            var FilmFantastic_movie = document.getElementById('FilmFantastic_movie').checked = false;
-                                            var FilmHorror = document.getElementById('FilmHorror').checked = false;
-                                            var FilmCatastrophe_movie = document.getElementById('FilmCatastrophe_movie').checked = false;
-                                            var Film_romantic = document.getElementById('Film_romantic').checked = false;
-                                            var FilmFantasy = document.getElementById('FilmFantasy').checked = false;
-                                            var FilmZombie_Werewolves_Vampires = document.getElementById('FilmZombie_Werewolves_Vampires').checked = false;
-                                            var FilmSport = document.getElementById('FilmSport').checked = false;
-                                            var Film_military = document.getElementById('Film_military').checked = false;
-                                            var Film_on_real_events = document.getElementById('Film_on_real_events').checked = false;
+                                            var Molten = document.getElementById('Molten').checked = false;
+                                            var Repousse = document.getElementById('Repousse').checked = false;
+                                            var Radius13 = document.getElementById('Radius13').checked = false;
+                                            var Radius14 = document.getElementById('Radius14').checked = false;
+                                            var Radius15 = document.getElementById('Radius15').checked = false;
+                                            var Radius16 = document.getElementById('Radius16').checked = false;
+                                            var Radius17 = document.getElementById('Radius17').checked = false;
+                                            var mounting_holes_4 = document.getElementById('mounting_holes_4').checked = false;
+                                            var mounting_holes_5 = document.getElementById('mounting_holes_5').checked = false;
+                                            var hole_diameter_98 = document.getElementById('hole_diameter_98').checked = false;
+                                            var hole_diameter_100 = document.getElementById('hole_diameter_100').checked = false;
+                                            var hole_diameter_105 = document.getElementById('hole_diameter_105').checked = false;
+                                            var hole_diameter_108 = document.getElementById('hole_diameter_108').checked = false;
+                                            var hole_diameter_110 = document.getElementById('hole_diameter_110').checked = false;
+                                            var hole_diameter_112 = document.getElementById('hole_diameter_112').checked = false;
+                                            var hole_diameter_114_3 = document.getElementById('hole_diameter_114_3').checked = false;
+                                            var hole_diameter_139 = document.getElementById('hole_diameter_139').checked = false;
+                                            var center_hole_diameter_58_6 = document.getElementById('FilmSport').checked = false;
+                                            var center_hole_diameter_60_1 = document.getElementById('Film_military').checked = false;
+                                            var center_hole_diameter_98_1 = document.getElementById('Film_on_real_events').checked = false;
+                                            var center_hole_diameter_66_1 = document.getElementById('center_hole_diameter_66_1').checked = false;
                                             var hide = document.getElementById('throwOff');
                                             hide.classList.add("hide");
 
-                                            if(FilmAction === false && FilmWestern === false && FilmCrime === false && FilmDrama === false && FilmHistorical_film === false && FilmComedy === false && FilmMelodrama === false && FilmMusical_film === false
-                                                && FilmTragedy === false && FilmTragicomedy === false && FilmThriller === false && FilmFantastic_movie === false && FilmHorror === false && FilmCatastrophe_movie === false
-                                                && Film_romantic === false && FilmFantasy === false && FilmZombie_Werewolves_Vampires === false && FilmSport === false && Film_military === false && Film_on_real_events === false){
+                                            if(Molten === false && Repousse === false && Radius13 === false && Radius14 === false && Radius15 === false && Radius16 === false && Radius17 === false && mounting_holes_4 === false
+                                                && mounting_holes_5 === false && hole_diameter_98 === false && hole_diameter_100 === false && hole_diameter_105 === false && hole_diameter_108 === false && hole_diameter_110 === false
+                                                && hole_diameter_112 === false && hole_diameter_114_3 === false && hole_diameter_139 === false
+                                                && center_hole_diameter_58_6 === false && center_hole_diameter_60_1 === false
+                                                && center_hole_diameter_98_1 === false && center_hole_diameter_66_1 === false){
                                                 document.getElementById('throwOnn').setAttribute("disabled", "disabled");
 
                                                 return false;

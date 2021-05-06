@@ -5,12 +5,15 @@
 
     <div class="col-md-8">
         <div class="card">
+            <a class="navbar-brand" href="{{route('index')}}">
+                Вернуться на сайт
+            </a>
             <div class="card-header">Регистрация</div>
     <form method="POST" action="{{route('register')}}" aria-label="Register">
         @csrf
         <div class="form-group row">
             @include('auth.leyouts.error', ['fieldName' => 'name'])
-            <label for="name" class="col-md-4 col-form-label text-md-right">Имя</label>
+            <label for="name" class="col-md-4 col-form-label text-md-right">Никнейм (Ваш псевдоним)</label>
 
             <div class="col-md-6">
                 <input id="name" type="text" class="form-control" name="name"
@@ -54,9 +57,10 @@
 
         <div class="form-group row mb-0">
             <div class="col-md-6 offset-md-4">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn-enter">
                     Зарегистрироваться
                 </button>
+                <a class="btn-registration" href="{{route('login')}}">Войти</a>
             </div>
         </div>
     </form>

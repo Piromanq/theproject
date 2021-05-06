@@ -1,0 +1,72 @@
+body{
+    background: #20262E;
+    color: #fff;
+}
+button{
+text-decoration: none;
+    color: #fff;
+    border: none;
+}
+form{
+    margin-top: 20px;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+label{
+    color: #fff;
+}
+.card{
+    background: #20262E;
+    border: none;
+}
+.card-header{
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #8a8a8a;
+}
+
+.btn-enter{
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(103, 224, 144, 1);
+    text-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+.navbar-brand{
+    color: #fff!important;
+}
+.btn-registration{
+    display: block;
+    border-bottom: 2px solid;
+    border-color: rgba(103, 224, 144, 1) ;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.offset-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+
+    color: #fff!important;
+}
+
+.btn-fixed{
+    position: fixed;
+    bottom: 50px;
+}
+
+.hide {
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}

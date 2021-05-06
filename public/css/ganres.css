@@ -1,4 +1,7 @@
 .alert{
     color: #fff;
     display: block!important;
+    text-align: center;
+    background: #111113;
+    padding: 20px;
 }

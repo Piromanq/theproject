@@ -26,15 +26,13 @@ class FeedbackController extends Controller
     public function send(FeedbackRequest $request)
 
     {
-        $path = $request->file('img')->store('feedback');
-        $params['img'] = $path;
-        Feedback::create($params);
+
         $data = array(
             'massage' => $request->massage,
-            'img' => $request->img,
         );
 
         Mail::to('weronikanqt@gmail.com')->send(new SendMail($data));
+        return view('send');
     }
 
 

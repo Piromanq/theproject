@@ -4,13 +4,9 @@
 
 @section('content')
 
-    @if(session()->has('success'))
-        {{session()->forget('success')}}
-        <p class="alert alert-success">{{session()->get('success')}}</p>
-    @endif
 
-    <h1>Вы в категории: Все материалы </h1><span class="ProductCount"></span>
-    <h2 class="discription-category">В категории все материалы находится весь контент который есть на OA.ru. По умолчанию категория сортируется по дате добавления. На первой странице всегда находится самый свежий контент.</h2>
+    <h1>Вы в категории: Весь ассортимент </h1><span class="ProductCount"></span>
+    <h2 class="discription-category">В этой категории находятся все товары которые есть на сайте. По умолчанию категория сортируется по дате добавления.</h2>
     {{$products->links()}}
 
 

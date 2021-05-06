@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OA.online - сериалы и подборки онлайн в хорошем качестве. Кино сериалы в хорошем качестве от LostFilm HD 720, 1080p</title>
-    <meta name="description" content="Смотреть сериалы онлайн новинки 2020 года от LostFilm, Coldfilm в хорошем качестве HD 720 и 1080p с хорошим переводом и звуком.">
+    <title>Купить новые шины, диски в Клинцах. Проставочные кольца, автомобильные камеры. </title>
+    <meta name="description" content="Брянская область, г.Клинцы, ул. Бессарабова 25. Продажа новых шин, дисков, автомобильных камер,
+центровочных колец в наличии и под заказ 8-999-620-61-76">
     <meta name="yandex-verification" content="58dddc8c9ec3ba03" />
     <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="icon" href="/serial/serials/img/favicon.ico" type="image/x-icon">
@@ -35,31 +36,86 @@
     </div>
     <div class="overlay">
         <nav class="overlayMenu">
+            <div class="burger-registration__wrapper">
+                <!--
+            @guest
+
+                <a class="btn-enter" href="{{route('login')}}">Войти</a>
+
+                <a class="btn-registration" href="{{route('register')}}">Регистрация</a>
+
+            @endguest
+                    -->
+                @auth
+                <a class="btn-registration" href="{{route('get-logout')}}">Выйти</a>
+                @endauth
+                </div>
             <ul role="menu">
-                <img src="/serial/serials/img/The-oa-tv-logo.png" alt="">
-                <h1 class="logo__label">.watch</h1>
-                <li><a href="/" role="menuitem">Все материалы</a></li>
-                <li><a href="feedback" role="menuitem">Правообладателям</a></li>
+                <div class="flex-burger">
+                <span class="burger-header-address">г.Клинцы, Бессарабова 25</span>
+                <span class="footerCopyrightPhone">Звонки принимаются: 9:00 - 18:00</span>
+                <span class="footer_phone_number">+8-999-620-61-76</span>
+                </div>
+                <img class="logo__label" src="/serial/serials/img/pitstoplogo.png" alt="">
+
+                <li><a href="/" role="menuitem">Весь ассортимент</a></li>
+                <li><a href="/feedback" role="menuitem">Написать нам</a></li>
+                @auth
+                <li>
+                    <a class="nav-link" href="{{route('basket')}}">Избранное</a>
+                </li>
+                    @endauth
             </ul>
         </nav>
     </div>
 <div class="header-group__wrapper">
     <div class="header-left__group">
         <a href="/">
-        <span class="header-span__group">Все материалы</span>
+        <span class="header-span__group">Весь ассортимент</span>
         </a>
     </div>
     <div class="header__group">
         <div class="header-logo">
-            <img src="/serial/serials/img/The-oa-tv-logo.png" alt="">
-            <h1 class="logo__label">.watch</h1>
+            <!--
+            <img src="/serial/serials/img/logo.png" alt="">
+            -->
+            <img class="logo__label" src="/serial/serials/img/pitstoplogo.png" alt="">
         </div>
         <div class="header-search"></div>
     </div>
     <div class="header-right__group">
         <a href="/feedback">
-        <span class="header-span__group">Правообладателям</span>
+        <span class="header-span__group">Написать нам</span>
         </a>
+    </div>
+    <div class="flex-burger">
+        <span class="header-address">г.Клинцы, Бессарабова 25</span>
+        <br>
+         <span class="header_phone_number">+8-999-620-61-76</span>
+    </div>
+    <div class="header-registration__wrapper">
+    @auth
+        @admin
+
+            <a href="/admin/products">Панель админа</a>
+
+        @endadmin
+
+    <a class="btn-registration" href="{{route('get-logout')}}">Выйти</a>
+    @endauth
+<!--
+        @guest
+            <a class="btn-enter" href="{{route('login')}}">Войти</a>
+
+            <a class="btn-registration" href="{{route('register')}}">Регистрация</a>
+
+        @endguest
+        -->
+            @auth
+        <a class="nav-link" href="{{route('basket')}}"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+            </svg>Моё избранное</a>
+            @endauth
     </div>
 </div>
     <form action="{{route('search')}}" method="get">
@@ -79,16 +135,16 @@
 <div class="clipGroup">
     <div class="clipPath1">
         <div>
-        <a href="/film">
-        <span class="layer-image">Фильмы</span>
-        <img class="imgLogo" src="/serial/serials/img/widthOrin.jpg">
+        <a href="/tires">
+        <span class="layer-image">Шины</span>
+        <img class="imgLogo" src="/serial/serials/img/tire.jpg">
         </a>
         </div>
             </div>
             <div class="clipPath2">
-                <a href="/serials">
-                <span class="layer-image2" id="scroll-btn">Сериалы</span>
-                <img class="imgLogo" src="/serial/serials/img/widthOrin2.jpg" >
+                <a href="/disk">
+                <span class="layer-image2" id="scroll-btn">Диски</span>
+                <img class="imgLogo" src="/serial/serials/img/disk.jpg" >
                 </a>
             </div>
 </div>
@@ -114,70 +170,40 @@ if(window.pageYOffset > 1100){
 }
 }
 </script>
-<h1 class="slider-soon">Скоро на сайте</h1>
+<h1 class="slider-soon">Акции и информация</h1>
 <div class="single-item">
     <div class="items">
         <span class="overlay_left"></span>
-            <img src="/serial/serials/img/s_dnem_smerti.jpg" alt="">
-            <a href="/film/s-dnem-smerti">
-            <h1>Уже на сайте.<br>Смотреть онлайн</h1>
+            <img src="/serial/serials/img/disks.jpg" alt="">
+    </div>
+    <div class="items">
+        <span class="overlay_left"></span>
+        <img src="/serial/serials/img/tires.jpg" alt="">
+    </div>
+
+    <div class="items">
+        <span class="overlay_left"></span>
+        <img src="/serial/serials/img/kak_vibratb diski.jpg" alt="">
+        <a href="https://razboltovka.ru/" target="_blank">
+        <h1>Перейти и посмотреть разболтовку на свою машину</h1>
         </a>
     </div>
-    <div class="items">
-        <span class="overlay_left"></span>
-        <img src="/serial/serials/img/ptica-v-kletke.jpg" alt="">
-        <h1>Птица в клетке. Заражение<br>в кино с 21.01.2021</h1>
-    </div>
-    <div class="items">
-        <span class="overlay_left"></span>
-        <img src="/serial/serials/img/monster_hunter.jpg" alt="">
-        <h1>Охотник на монстров<br>в кино с 14.01.2021</h1>
-    </div>
-    <div class="items">
-        <span class="overlay_left"></span>
-        <img src="/serial/serials/img/dom-s-preslygoi-3-season.jpg" alt="">
-        <h1>Дом с прислугой 2 сезон<br>на сайте с 15.01.2021</h1>
-    </div>
-    <div class="items">
-        <span class="overlay_left"></span>
-        <img src="/serial/serials/img/riverdail-season-5.jpg" alt="">
-        <h1>Ривердэйл 5 сезон<br>на сайте с 21.01.2021</h1>
 
+    <div class="items">
+        <span class="overlay_left"></span>
+        <img src="/serial/serials/img/kak_vibratb_reziny.jpg" alt="">
+        <a href="https://razboltovka.ru/razmer-shin" target="_blank">
+            <h1>Перейти и посмотреть размер резины на свою машину</h1>
+        </a>
     </div>
 </div>
 
 <body>
-@admin
-<button>
-    <a href="/17285384FghEFgadmin/products">Панель админа</a>
-</button>
-@endadmin
+
 <div id="wrapper" class="b-wrapper">
 
     <div class="containerMovies">
     @yield('content')
-            @auth
-                @if(\Illuminate\Support\Facades\Auth::user()->isAdmin())
-                    <li><a class="nav-link" href="{{route('home')}}">Панель Админа</a></li>
-                @else
-                    <li><a class="nav-link" href="{{route('person.orders.index')}}">Мои заказы</a></li>
-                @endif
-                <li><a class="nav-link" href="{{route('get-logout')}}">Выйти</a></li>
-            @endauth
-
-
-
-        @if(session()->has('success'))
-            <p class="alert alert-success">{{session()->get('success')}}</p>
-        @endif
-
-            @if(session()->has('warning'))
-                <p class="alert alert-warning">{{session()->get('warning')}}</p>
-            @endif
-
-
-
-
 </div>
     <a href="" class="back-to-top"></a>
 
@@ -188,30 +214,46 @@ if(window.pageYOffset > 1100){
     <script src="/serial/js/menu.js"></script>
     <script src="/serial/js/lazyload.js"></script>
     <script src="/serial/js/search.js"></script>
+    <script src="/serial/js/select.js"></script>
+
 
 </div>
-
-</body>
-
-</html>
 <div class="footer">
     <div class="footer-wrapper">
 
-<div class="footer-contacts">
-    <div class="footer-logo">
-        <h1 class="logo__label">OA.ru</h1>
-        <span class="footer-description">Весь размещенный на сайте материал представляет собой контент, находящийся в свободном доступе для скачивания и просмотра в сети Интернет.</span>
+        <div class="footer-contacts">
+
+
+            <div class="footer-contacts__wrapper">
+                <a class="footerCopyrightHolder" href="/feedback"><i class="fas fa-file-signature"></i>Написать нам прямо сейчас</a>
+                <span class="footer-description">Если у вас есть вопрос вы можете задать его нажав на ссылку "Написать нам прямо сейчас" и мы ответим вам на вашу электронную почту.</span>
+                <img class="logo__label" src="/serial/serials/img/pitstoplogo.png" alt="">
+            </div>
+            <div class="wrapper-CopyrightHolder">
+                <div class="footer-logo">
+                    <span class="burger-header-address">г.Клинцы, Бессарабова 25</span>
+                    <span class="footerCopyrightPhone">Звонки принимаются: 9:00 - 18:00</span>
+                    <span class="footer_phone_number">+8-999-620-61-76</span>
+
+                    <span class="footerCopyrightHolder"><i class="fas fa-id-badge"></i>Контакты:<br>OfficialTheOa@gmail.com<br>Officialtheoa@yandex.ru</span>
+                </div>
+
+            </div>
+<div class="footer_right_block">
+<div class="footer_flex_menu">
+    <h2 class="right_block_items_name">Навигация по сайту</h2>
+    <a href="/" class="right_block_items"><span>Весь ассортимент</span></a>
+    <a href="/tires" class="right_block_items">Шины</a>
+    <a href="/disk" class="right_block_items">Диски</a>
+    <a href="https://razboltovka.ru/razmer-shin" class="right_block_items" target="_blank">Как подобрать шины?</a>
+    <a href="https://razboltovka.ru/" class="right_block_items" target="_blank">Как подобрать диски?</a>
+</div>
+</div>
+        </div>
     </div>
-<div class="footer-contacts__wrapper">
-    <a class="footerCopyrightHolder" href="/feedback"><i class="fas fa-file-signature"></i>Правообладателям</a>
-        <span class="footer-description">Если Вы, будучи правообладателем определённого контента, обнаружили, что сайт нарушает Ваши права, просим вас обратиться по указаным контактам. Так же
-        вы можете обротиться к нам напрямую перейдя по ссылке:  <a class="footerCopyrightHolder__smal" href="/feedback">Правообладателям</a> </span>
 
 </div>
-    <div class="wrapper-CopyrightHolder">
-        <span class="footerCopyrightHolder"><i class="fas fa-id-badge"></i>Контакты:<br>weronikanqt@gmail.com<br>amiarov@yandex.ru</span>
-    </div>
-</div>
-    </div>
+</body>
 
-</div>
+</html>
+

@@ -18,13 +18,14 @@ Auth::routes([
     'confirm' => true,
     'verify' => true,
 ]);
-Route::get('/17285384FghEFgregister', '\App\Http\Controllers\Auth\RegisterController@showRegistrationForm')->name('register');
-Route::get('/17285384FghEFglogin', '\App\Http\Controllers\Auth\LoginController@showLoginForm')->name('get-login');
+
+
+
 Route::get('sitemap.xml', '\App\Http\Controllers\MainController@sitemap')->name('sitemap');
 Route::get('/genres', '\App\Http\Controllers\MainController@genres')->name('genres');
 Route::get('/feedback', '\App\Http\Controllers\FeedbackController@index');
 Route::post('/feedback/send', '\App\Http\Controllers\FeedbackController@send')->name('feedbackSend');
-Route::get('/17285384FghEFglogout', '\App\Http\Controllers\Auth\LoginController@logout')->name('get-logout');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('get-logout');
 Route::get('/verify/{token}', '\App\Http\Controllers\Auth\RegisterController@verify')->name('register.verify');
 
 
@@ -32,7 +33,7 @@ Route::get('/verify/{token}', '\App\Http\Controllers\Auth\RegisterController@ver
 Route::middleware(['auth'])->group(function () {
 
     Route::group([
-        'prefix' => '17285384FghEFgadmin',
+        'prefix' => 'admin',
 
     ], function (){
         Route::group(['middleware' => 'is_admin'], function(){
@@ -51,18 +52,10 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/orders/{order}', 'App\Http\Controllers\Person\OrderController@show')->name('orders.show');
     });
 
-
-
-
-
-
-
-
-
 });
 
 Route::get('/', '\App\Http\Controllers\MainController@index')->name('index');
-Route::get('/17285384FghEFgcategories', '\App\Http\Controllers\MainController@categories')->name('categories');
+Route::get('/categories', '\App\Http\Controllers\MainController@categories')->name('categories');
 Route::get('/search', '\App\Http\Controllers\MainController@search')->name('search');
 
 

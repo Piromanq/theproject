@@ -11,6 +11,9 @@
     @endif
     <div class="col-md-8">
         <div class="card">
+            <a class="navbar-brand" href="{{route('index')}}">
+                Вернуться на сайт
+            </a>
             <div class="card-header">Авторизация</div>
                         <div class="card-body">
                             <form method="POST" action="{{route('login')}}" aria-label="Login">
@@ -22,11 +25,11 @@
                                     <div class="col-md-6">
                                         <input id="email" type="email" class="form-control"
                                                name="email" value="" required autofocus>
-
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
+
                                     @include('auth.leyouts.error', ['fieldName' => 'password'])
                                     <label for="password" class="col-md-4 col-form-label text-md-right">Пароль</label>
 
@@ -38,9 +41,10 @@
                                 </div>
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8 offset-md-4">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn-enter">
                                             Войти
                                         </button>
+                                        <a class="btn-registration" href="{{route('register')}}">Регистрация</a>
                                     </div>
                                 </div>
                             </form>

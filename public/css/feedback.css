@@ -14,9 +14,9 @@
 }
 
 .feedback-bg-linear textarea {
-    width: 575px;
+    width: 584px;
     height: 200px;
-    max-width: 600px;
+    max-width: 1000px;
     max-height: 270px;
 }
 
@@ -81,7 +81,6 @@
 }
 
 .form-group {
-    width: 78%!important;
     height: 250px!important;
     margin-top: 60px;
 }
@@ -90,12 +89,19 @@
     .position-feedback__form{
         width: 98vw;
     }
+
+    .card-word__wrapper{
+        width: 280px!important;
+    }
     .feedback-bg-linear textarea{
-        width: 70vw;
-        max-width: 70vw;
+        width: 86vw;
+        max-width: 86vw;
+        height: 181px;
+        max-height: 340px;
     }
     .img-add__form input{
         font-size: 16px!important;
+        width: 90vw;
     }
     .img-add__form{
         height: 400px!important;
@@ -106,10 +112,57 @@
     .img-add__form{
         margin: 0!important;
     }
+    .form-group {
+        width: 100%!important;
+    }
 }
 
 
 /*END Feedback all*/
+
+/*------------------- Feedback/Send -------------------*/
+.card-word__wrapper{
+    height: 300px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 500px;
+}
+
+.card-word__wrapper h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.card-word__wrapper span{
+    font-size: 18px;
+    color: #fff;
+}
+
+.admin-wrapper-word{
+    margin-bottom: 20px;
+}
+
+.admin-wrapper-word span{
+    font-size: 20px!important;
+    color: #fff;
+}
+.card-word__wrapper i{
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #fff;
+}
+/*------------------- Feedback/Send END -------------------*/
+
 button[disabled] {
     cursor: not-allowed;
 }
+@media (orientation: landscape) and (max-width: 900px) and (min-width: 557px) {
+    .feedback-bg-linear textarea {
+        height: 200px;
+        width: 460px;
+        max-width: 560px;
+        max-height: 270px;
+    }
+}
+
+

@@ -12,14 +12,15 @@ class Product extends Model
         'price', 'category_id','logo_image', 'title', 'meta_description', 'player', 'original_name', 'social_networks_title',
         'social_networks_url', 'social_networks_description', 'progress', 'genres',
         'number_of_episodes', 'episode_release_day', 'voice_acting',
-        'rating', 'kinopoisk_id', 'kinopoisk_reting', 'FilmAction', 'FilmWestern', 'FilmCrime',
-        'Action', 'Western', 'Crime', 'Detective', 'Drama', 'Historical_film', 'Comedy',
-        'Melodrama', 'Musical_film', 'Thriller', 'Fantastic_movie', 'Horror', 'Catastrophe_movie', 'Russian_serials',
-        'romantic', 'Fantasy','Zombie_Werewolves_Vampires', 'Sport', 'military', 'on_real_events', 'Evil_Spirits_And_Witches',
-        'Netflix', 'FilmDetective', 'FilmDrama', 'FilmHistorical_film', 'FilmComedy', 'FilmMelodrama', 'FilmMusical_film', 'FilmTragedy',
-        'FilmTragicomedy', 'FilmThriller', 'FilmFantastic_movie', 'FilmHorror', 'FilmCatastrophe_movie', 'Film_romantic',
-        'FilmFantasy', 'FilmZombie_Werewolves_Vampires', 'FilmSport', 'Film_military', 'Film_on_real_events',
-        'StageDirector', 'Country', 'Channel', 'IMDbRating', 'SingleJanr', 'ChannelImg', 'release_date', 'another_player',];
+        'rating', 'kinopoisk_id', 'kinopoisk_reting', 'Molten', 'Repousse', 'Radius13',
+        'R13', 'R14', 'R15', 'R16', 'R17', 'R18', 'R19',
+        'R20', 'Filter175X65', 'Filter175X70', 'Filter185X60', 'Filter185X65', 'Filter195X60', 'Filter195X65',
+        'Filter205X55', 'Filter205X60','Filter215X55', 'Filter215X60', 'Filter215X65', 'Filter225X55', 'Filter225X60', 'Filter235X55',
+        'Filter235X60', 'summer', 'winter', 'Radius14', 'Radius15', 'Radius16', 'Radius17', 'mounting_holes_4', 'mounting_holes_5', 'hole_diameter_98',
+        'hole_diameter_100', 'hole_diameter_105', 'hole_diameter_108', 'hole_diameter_110', 'hole_diameter_112', 'hole_diameter_114_3',
+        'hole_diameter_139', 'center_hole_diameter_58_6', 'center_hole_diameter_60_1', 'center_hole_diameter_66_1', 'center_hole_diameter_98_1',
+        'StageDirector', 'Country', 'Channel', 'IMDbRating', 'SingleJanr', 'ChannelImg', 'release_date', 'another_player',
+        'speed_index', 'increased_lifting_capacity', 'RunFlat_technology', 'vehicle_type', 'design', 'design', 'sealing_method',];
 
     public function category()
     {
@@ -42,399 +43,376 @@ public function scopeByCode ($query, $code){
 
 
 
-    public function isFilmAction(){
-        return $this->FilmAction === 1;
-    }
-
-    public function isFilmWestern(){
-        return $this->FilmWestern === 1;
-    }
-
-    public function isFilmCrime(){
-        return $this->FilmCrime === 1;
-    }
-
-    public function isFilmDetective(){
-        return $this->FilmDetective === 1;
-    }
-
-    public function isFilmDrama(){
-        return $this->FilmDrama === 1;
-    }
-
-    public function isFilmHistorical_film(){
-        return $this->FilmHistorical_film === 1;
-    }
-
-    public function isFilmComedy(){
-        return $this->FilmComedy === 1;
-    }
-
-    public function isFilmMelodrama(){
-        return $this->FilmMelodrama === 1;
-    }
-
-    public function isFilmMusical_film(){
-        return $this->FilmMusical_film === 1;
-    }
-
-    public function isFilmTragicomedy(){
-        return $this->FilmTragicomedy === 1;
-    }
-
-    public function isFilmThriller(){
-        return $this->FilmThriller === 1;
-    }
-
-    public function isFilmFantastic_movie(){
-        return $this->FilmFantastic_movie === 1;
-    }
-
-    public function isFilmHorror(){
-        return $this->FilmHorror === 1;
-    }
-
-    public function isFilmCatastrophe_movie(){
-        return $this->FilmCatastrophe_movie === 1;
-    }
-
-    public function isFilm_romantic(){
-        return $this->Film_romantic === 1;
-    }
-
-    public function isFilmFantasy(){
-        return $this->FilmFantasy === 1;
-    }
-
-    public function isFilmZombie_Werewolves_Vampires(){
-        return $this->FilmZombie_Werewolves_Vampires === 1;
-    }
-
-    public function isFilmSport(){
-        return $this->FilmSport === 1;
-    }
-
-    public function isFilm_military(){
-        return $this->Film_military === 1;
-    }
-
-    public function isFilm_on_real_events(){
-        return $this->Film_on_real_events === 1;
-    }
-
-
-
-
-
-
-
-    public function isAction(){
-        return $this->Action === 1;
-    }
-
-    public function isWestern(){
-        return $this->Western === 1;
-    }
-
-    public function isCrime(){
-        return $this->Crime === 1;
-    }
-
-    public function isDetective(){
-        return $this->Detective === 1;
-    }
-
-    public function isDrama(){
-        return $this->Drama === 1;
-    }
-
-    public function isHistorical_film(){
-        return $this->Historical_film === 1;
-    }
-
-    public function isComedy(){
-        return $this->Comedy === 1;
-    }
-
-    public function isMelodrama(){
-        return $this->Melodrama === 1;
-    }
-
-    public function isMusical_film(){
-        return $this->Musical_film === 1;
-    }
-
-    public function isThriller(){
-        return $this->Thriller === 1;
-    }
-
-    public function isFantastic_movie(){
-        return $this->Fantastic_movie === 1;
-    }
-
-    public function isHorror(){
-        return $this->Horror === 1;
-    }
-
-    public function isCatastrophe_movie(){
-        return $this->Catastrophe_movie === 1;
-    }
-
-    public function isRussian_serials(){
-        return $this->Russian_serials === 1;
-    }
-
-    public function isRomantic(){
-        return $this->Romantic === 1;
-    }
-
-    public function isFantasy(){
-        return $this->Fantasy === 1;
-    }
-
-    public function isZombie_Werewolves_Vampires(){
-        return $this->Zombie_Werewolves_Vampires === 1;
-    }
-
-    public function isSport(){
-        return $this->Sport === 1;
-    }
-
-    public function isMilitary(){
-        return $this->Military === 1;
-    }
-
-    public function isOn_real_events(){
-        return $this->On_real_events === 1;
-    }
-
-    public function isEvil_Spirits_And_Witches(){
-        return $this->Evil_Spirits_And_Witches === 1;
-    }
-
-    public function isNetflix(){
-        return $this->Netflix === 1;
-    }
-
-
-    public function setFilmActionAttribute($value)
+    public function setR13Attribute($value)
     {
-        $this->attributes['FilmAction'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R13'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR13(){
+        return $this->R13 === 1;
     }
 
-    public function setFilmWesternAttribute($value)
+    public function setR14Attribute($value)
     {
-        $this->attributes['FilmWestern'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R14'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR14(){
+        return $this->R14 === 1;
     }
 
-    public function setFilmCrimeAttribute($value)
+    public function setR15Attribute($value)
     {
-        $this->attributes['FilmCrime'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R15'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR15(){
+        return $this->R15 === 1;
     }
 
-    public function setFilmDetectiveAttribute($value)
+    public function setR16Attribute($value)
     {
-        $this->attributes['FilmDetective'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R16'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR16(){
+        return $this->R16 === 1;
     }
 
-    public function setFilmDramaAttribute($value)
+    public function setR17Attribute($value)
     {
-        $this->attributes['FilmDrama'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R17'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR17(){
+        return $this->R17 === 1;
     }
 
-    public function setFilmHistoricalFilmAttribute($value)
+    public function setR18Attribute($value)
     {
-        $this->attributes['FilmHistorical_film'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R18'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR18(){
+        return $this->R18 === 1;
     }
 
-    public function setFilmComedyAttribute($value)
+    public function setR19Attribute($value)
     {
-        $this->attributes['FilmComedy'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R19'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR19(){
+        return $this->R19 === 1;
     }
 
-    public function setFilmMelodramaAttribute($value)
+    public function setR20Attribute($value)
     {
-        $this->attributes['FilmMelodrama'] = $value === 'on' ? 1 : 0;
+        $this->attributes['R20'] = $value === 'on' ? 1 : 0;
+    }
+    public function isR20(){
+        return $this->R20 === 1;
     }
 
-    public function setFilmMusicalFilmAttribute($value)
+    public function setFilter175X65Attribute($value)
     {
-        $this->attributes['FilmMusical_film'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter175X65'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter175X65(){
+        return $this->Filter175X65 === 1;
     }
 
-    public function setFilmTragedyAttribute($value)
+    public function setFilter175X70Attribute($value)
     {
-        $this->attributes['FilmTragedy'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter175X70'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter175X70(){
+        return $this->Filter175X70 === 1;
     }
 
-    public function setFilmTragicomedyAttribute($value)
+    public function setFilter185X60Attribute($value)
     {
-        $this->attributes['FilmTragicomedy'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter185X60'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter185X60(){
+        return $this->Filter185X60 === 1;
     }
 
-    public function setFilmThrillerAttribute($value)
+    public function setFilter185X65Attribute($value)
     {
-        $this->attributes['FilmThriller'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter185X65'] = $value === 'on' ? 1 : 0;
     }
-
-    public function setFilmFantasticMovieAttribute($value)
-    {
-        $this->attributes['FilmFantastic_movie'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmHorrorAttribute($value)
-    {
-        $this->attributes['FilmHorror'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmCatastropheMovieAttribute($value)
-    {
-        $this->attributes['FilmCatastrophe_movie'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmRomanticAttribute($value)
-    {
-        $this->attributes['Film_romantic'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmFantasyAttribute($value)
-    {
-        $this->attributes['FilmFantasy'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmZombieWerewolvesVampiresAttribute($value)
-    {
-        $this->attributes['FilmZombie_Werewolves_Vampires'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmSportAttribute($value)
-    {
-        $this->attributes['FilmSport'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmMilitaryAttribute($value)
-    {
-        $this->attributes['Film_military'] = $value === 'on' ? 1 : 0;
-    }
-
-    public function setFilmOnRealEventsAttribute($value)
-    {
-        $this->attributes['Film_on_real_events'] = $value === 'on' ? 1 : 0;
+    public function isFilter185X65(){
+        return $this->Filter185X65 === 1;
     }
 
 
-
-
-
-    public function setActionAttribute($value)
+    public function setFilter195X60Attribute($value)
     {
-        $this->attributes['Action'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter195X60'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter195X60(){
+        return $this->Filter195X60 === 1;
     }
 
-    public function setWesternAttribute($value)
+    public function setFilter195X65Attribute($value)
     {
-        $this->attributes['Western'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter195X65'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter195X65(){
+        return $this->Filter195X65 === 1;
     }
 
-    public function setCrimeAttribute($value)
+    public function setFilter205X55Attribute($value)
     {
-        $this->attributes['Crime'] = $value === 'on' ? 1 : 0;
-
+        $this->attributes['Filter205X55'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter205X55(){
+        return $this->Filter205X55 === 1;
     }
 
-    public function setDetectiveAttribute($value)
+
+    public function setFilter205X60Attribute($value)
     {
-        $this->attributes['Detective'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter205X60'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter205X60(){
+        return $this->Filter205X60 === 1;
     }
 
-    public function setDramaAttribute($value)
+    public function setFilter215X55Attribute($value)
     {
-        $this->attributes['Drama'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter215X55'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter215X55(){
+        return $this->Filter215X55 === 1;
     }
 
-    public function setHistoricalFilmAttribute($value)
+    public function setFilter215X60Attribute($value)
     {
-        $this->attributes['Historical_film'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter215X60'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter215X60(){
+        return $this->Filter215X60 === 1;
     }
 
-    public function setComedyAttribute($value)
+    public function setFilter215X65Attribute($value)
     {
-        $this->attributes['Comedy'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter215X65'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter215X65(){
+        return $this->Filter215X65 === 1;
     }
 
-    public function setMelodramaAttribute($value)
+    public function setFilter225X55Attribute($value)
     {
-        $this->attributes['Melodrama'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter225X55'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter225X55(){
+        return $this->Filter225X55 === 1;
     }
 
-    public function setMusicalFilmAttribute($value)
+    public function setFilter225X60Attribute($value)
     {
-        $this->attributes['Musical_film'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter225X60'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter225X60(){
+        return $this->Filter225X60 === 1;
     }
 
-    public function setThrillerAttribute($value)
+    public function setFilter235X55Attribute($value)
     {
-        $this->attributes['Thriller'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter235X55'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter235X55(){
+        return $this->Filter235X55 === 1;
     }
 
-    public function setFantasticMovieAttribute($value)
+
+    public function setFilter235X60Attribute($value)
     {
-        $this->attributes['Fantastic_movie'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Filter235X60'] = $value === 'on' ? 1 : 0;
+    }
+    public function isFilter235X60(){
+        return $this->Filter235X60 === 1;
     }
 
-    public function setHorrorAttribute($value)
+    public function setSummerAttribute($value)
     {
-        $this->attributes['Horror'] = $value === 'on' ? 1 : 0;
+        $this->attributes['summer'] = $value === 'on' ? 1 : 0;
+    }
+    public function isSummer(){
+        return $this->summer === 1;
     }
 
-    public function setCatastrophe_movieAttribute($value)
+    public function setWinterAttribute($value)
     {
-        $this->attributes['Catastrophe_movie'] = $value === 'on' ? 1 : 0;
+        $this->attributes['winter'] = $value === 'on' ? 1 : 0;
+    }
+    public function isWinter(){
+        return $this->winter === 1;
     }
 
-    public function setRussianSerialsAttribute($value)
+    /*Диски*/
+
+    public function setMoltenAttribute($value)
     {
-        $this->attributes['Russian_serials'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Molten'] = $value === 'on' ? 1 : 0;
+    }
+    public function isMolten(){
+        return $this->Molten === 1;
+    }
+    public function setRepousseAttribute($value)
+    {
+        $this->attributes['Repousse'] = $value === 'on' ? 1 : 0;
+    }
+    public function isRepousse(){
+        return $this->Repousse === 1;
+    }
+    public function setRadius13Attribute($value)
+    {
+        $this->attributes['Radius13'] = $value === 'on' ? 1 : 0;
+    }
+    public function isRadius13(){
+        return $this->Radius13 === 1;
     }
 
-    public function setRomanticAttribute($value)
+    public function setRadius14Attribute($value)
     {
-        $this->attributes['romantic'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Radius14'] = $value === 'on' ? 1 : 0;
+    }
+    public function isRadius14(){
+        return $this->Radius14 === 1;
     }
 
-    public function setFantasyAttribute($value)
+    public function setRadius15Attribute($value)
     {
-        $this->attributes['Fantasy'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Radius15'] = $value === 'on' ? 1 : 0;
+    }
+    public function isRadius15(){
+        return $this->Radius15 === 1;
     }
 
-    public function setZombieWerewolvesVampiresAttribute($value)
+    public function setRadius16Attribute($value)
     {
-        $this->attributes['Zombie_Werewolves_Vampires'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Radius16'] = $value === 'on' ? 1 : 0;
+    }
+    public function isRadius16(){
+        return $this->Radius16 === 1;
     }
 
-    public function setSportAttribute($value)
+    public function setRadius17Attribute($value)
     {
-        $this->attributes['Sport'] = $value === 'on' ? 1 : 0;
+        $this->attributes['Radius17'] = $value === 'on' ? 1 : 0;
+    }
+    public function isRadius17(){
+        return $this->Radius17 === 1;
     }
 
-    public function setMilitaryAttribute($value)
+    public function setMountingHoles4Attribute($value)
     {
-        $this->attributes['military'] = $value === 'on' ? 1 : 0;
+        $this->attributes['mounting_holes_4'] = $value === 'on' ? 1 : 0;
+    }
+    public function isMounting_holes_4(){
+        return $this->mounting_holes_4 === 1;
     }
 
-    public function setOnRealEventsAttribute($value)
+
+    public function setMountingHoles5Attribute($value)
     {
-        $this->attributes['on_real_events'] = $value === 'on' ? 1 : 0;
+        $this->attributes['mounting_holes_5'] = $value === 'on' ? 1 : 0;
+    }
+    public function isMounting_holes_5(){
+        return $this->mounting_holes_5 === 1;
     }
 
-    public function setEvilSpiritsAndWitchesAttribute($value)
+    public function setHoleDiameter98Attribute($value)
     {
-        $this->attributes['Evil_Spirits_And_Witches'] = $value === 'on' ? 1 : 0;
+        $this->attributes['hole_diameter_98'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_98(){
+        return $this->hole_diameter_98 === 1;
     }
 
-    public function setNetflixAttribute($value)
+    public function setHoleDiameter100Attribute($value)
     {
-        $this->attributes['Netflix'] = $value === 'on' ? 1 : 0;
+        $this->attributes['hole_diameter_100'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_100(){
+        return $this->hole_diameter_100 === 1;
+    }
+
+    public function setHoleDiameter105Attribute($value)
+    {
+        $this->attributes['hole_diameter_105'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_105(){
+        return $this->hole_diameter_105 === 1;
+    }
+
+    public function setHoleDiameter108Attribute($value)
+    {
+        $this->attributes['hole_diameter_108'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_108(){
+        return $this->hole_diameter_108 === 1;
+    }
+
+    public function setHoleDiameter110Attribute($value)
+    {
+        $this->attributes['hole_diameter_110'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_110(){
+        return $this->hole_diameter_110 === 1;
+    }
+
+    public function setHoleDiameter112Attribute($value)
+    {
+        $this->attributes['hole_diameter_112'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_112(){
+        return $this->hole_diameter_112 === 1;
+    }
+
+    public function setHoleDiameter1143Attribute($value)
+    {
+        $this->attributes['hole_diameter_114_3'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_114_3(){
+        return $this->hole_diameter_114_3 === 1;
+    }
+
+    public function setHoleDiameter139Attribute($value)
+    {
+        $this->attributes['hole_diameter_139'] = $value === 'on' ? 1 : 0;
+    }
+    public function isHole_diameter_139(){
+        return $this->hole_diameter_139 === 1;
+    }
+
+    public function setCenterHoleDiameter586Attribute($value)
+    {
+        $this->attributes['center_hole_diameter_58_6'] = $value === 'on' ? 1 : 0;
+    }
+    public function isCenter_hole_diameter_58_6(){
+        return $this->center_hole_diameter_58_6 === 1;
+    }
+
+    public function setCenterHoleDiameter601Attribute($value)
+    {
+        $this->attributes['center_hole_diameter_60_1'] = $value === 'on' ? 1 : 0;
+    }
+    public function isCenter_hole_diameter_60_1(){
+        return $this->center_hole_diameter_60_1 === 1;
+    }
+
+    public function setCenterHoleDiameter661Attribute($value)
+    {
+        $this->attributes['center_hole_diameter_66_1'] = $value === 'on' ? 1 : 0;
+    }
+    public function isCenter_hole_diameter_66_1(){
+        return $this->center_hole_diameter_66_1 === 1;
+    }
+
+    public function setCenterHoleDiameter981Attribute($value)
+    {
+        $this->attributes['center_hole_diameter_98_1'] = $value === 'on' ? 1 : 0;
+    }
+    public function isCenter_hole_diameter_98_1(){
+        return $this->center_hole_diameter_98_1 === 1;
     }
 
 }
