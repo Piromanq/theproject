@@ -36,8 +36,6 @@ class CreateProductsTable extends Migration
             $table->string('Channel')->nullable();
             $table->string('release_date')->nullable();
             $table->text('image')->nullable();
-            $table->text('created_at')->nullable();
-            $table->text('updated_at')->nullable();
             $table->string('voice_acting')->nullable();
             $table->string('episode_release_day')->nullable();
             $table->string('number_of_episodes')->nullable();
